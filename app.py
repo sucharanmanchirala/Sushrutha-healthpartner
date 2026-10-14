@@ -21,12 +21,16 @@ Design notes for the jury
 
 from __future__ import annotations
 
+import datetime as dt
 import os
 from typing import Any, Dict, List
 
 from flask import Flask, jsonify, render_template, request
 
+import wellbeing
 from health_engine import DISCLAIMER, KnowledgeBase
+from i18n import payload as i18n_payload
+from i18n import table as i18n_table
 
 app = Flask(__name__)
 app.config["JSON_SORT_KEYS"] = False
@@ -165,6 +169,75 @@ def emergency():
             ],
         }
     )
+
+
+# --------------------------------------------------------------------------- #
+# Feature: multilingual interface (translations only - medical content stays in
+# its original English so no medical meaning is ever altered)
+# --------------------------------------------------------------------------- #
+@app.get("/api/i18n")
+def translations():
+    return jsonify(i18n_payload())
+
+
+# --------------------------------------------------------------------------- #
+# Feature: Daily Health Activity (deterministic pick + idempotent completion)
+# --------------------------------------------------------------------------- #
+def _read_log(source: Any) -> Dict[str, str]:
+    """Read the browser-held completion log from a query arg or a JSON body."""
+    if not hasattr(source, "get"):
+        return {}
+    return wellbeing.parse_log(source.get("log"))
+
+
+def _read_date(value: Any) -> dt.date:
+    if value in (None, ""):
+        return dt.date.today()
+    try:
+        return dt.date.fromisoformat(str(value))
+    except ValueError:
+        raise ValueError("date must be formatted YYYY-MM-DD")
+
+
+@app.get("/api/activity/today")
+def activity_today():
+    try:
+        day = _read_date(request.args.get("date"))
+    except ValueError as err:
+        return jsonify({"error": str(err)}), 400
+    log = _read_log(request.args)
+    data = wellbeing.payload(request.args.get("lang", "en"), day)
+    data["log"] = log
+    data["summary"] = wellbeing.weekly_summary(log, day)
+    return jsonify(data)
+
+
+@app.post("/api/activity/complete")
+def activity_complete():
+    body: Dict[str, Any] = request.get_json(silent=True) or {}
+    try:
+        day = _read_date(body.get("date"))
+        new_log, already = wellbeing.complete(
+            _read_log(body), day.isoformat(), str(body.get("activity_id", ""))
+        )
+    except ValueError as err:
+        return jsonify({"error": str(err)}), 400
+    return jsonify(
+        {
+            "log": new_log,
+            "already": already,
+            "date": day.isoformat(),
+            "summary": wellbeing.weekly_summary(new_log, day),
+        }
+    )
+
+
+@app.get("/api/i18n/<lang_code>")
+def translation_table(lang_code: str):
+    """Single-language table (useful for debugging a translation)."""
+    if lang_code not in ("en", "te", "hi"):
+        return jsonify({"error": "unsupported language", "code": lang_code}), 404
+    return jsonify({"lang": lang_code, "table": i18n_table(lang_code)})
 
 
 @app.errorhandler(404)

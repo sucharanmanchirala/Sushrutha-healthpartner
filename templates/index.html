@@ -32,15 +32,21 @@
   </a>
 
   <nav class="mainnav" id="mainNav" aria-label="Main">
-    <button class="navlink active" data-tab="home">Home</button>
-    <button class="navlink" data-tab="checker">Symptom&nbsp;Checker</button>
-    <button class="navlink" data-tab="care">Find&nbsp;Care</button>
-    <button class="navlink" data-tab="library">Health&nbsp;Library</button>
+    <button class="navlink active" data-tab="home" data-i18n="nav.home">Home</button>
+    <button class="navlink" data-tab="checker" data-i18n="nav.checker">Symptom&nbsp;Checker</button>
+    <button class="navlink" data-tab="care" data-i18n="nav.care">Find&nbsp;Care</button>
+    <button class="navlink" data-tab="library" data-i18n="nav.library">Health&nbsp;Library</button>
+    <button class="navlink" data-tab="activity" data-i18n="nav.activity">Daily&nbsp;Activity</button>
   </nav>
 
   <div class="topbar-actions">
+    <select id="langSelect" class="lang-select" aria-label="Language">
+      <option value="en">English</option>
+      <option value="te">తెలుగు</option>
+      <option value="hi">हिन्दी</option>
+    </select>
     <button class="btn btn-emergency" id="emergencyBtn">
-      <span class="dot"></span> Emergency 108
+      <span class="dot"></span> <span data-i18n="emg.btn">Emergency 108</span>
     </button>
     <button class="iconbtn" id="themeBtn" title="Switch theme" aria-label="Switch theme">🌙</button>
   </div>
@@ -53,22 +59,22 @@
 <section class="tab-panel active" id="tab-home">
   <div class="hero">
     <div class="hero-copy">
-      <span class="eyebrow">Healthcare accessibility · Hyderabad</span>
-      <h1>Understand your symptoms.<br /><span class="grad">Find the right care.</span> In minutes.</h1>
-      <p class="lead">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Healthcare accessibility · Hyderabad</span>
+      <h1 data-i18n="hero.title">Understand your symptoms.<br /><span class="grad">Find the right care.</span> In minutes.</h1>
+      <p class="lead" data-i18n="hero.lead">
         Susrutha Health Partner is a free, privacy-first health assistant. Describe how you feel,
         see how your symptoms line up with common conditions using published WHO, CDC and NHS
         information, learn how urgent your situation is — then find a hospital or testing
         facility near you in Hyderabad.
       </p>
       <div class="hero-actions">
-        <button class="btn btn-primary btn-lg" data-tab="checker">Check my symptoms →</button>
-        <button class="btn btn-ghost btn-lg" data-tab="care">📍 Find care near me</button>
+        <button class="btn btn-primary btn-lg" data-tab="checker" data-i18n="hero.cta1">Check my symptoms →</button>
+        <button class="btn btn-ghost btn-lg" data-tab="care" data-i18n="hero.cta2">📍 Find care near me</button>
       </div>
       <ul class="trust-row">
-        <li>✅ Not a diagnosis — decision support</li>
-        <li>🔒 No login, no data stored</li>
-        <li>📚 Sourced from WHO · CDC · NHS</li>
+        <li data-i18n="trust.1">✅ Not a diagnosis — decision support</li>
+        <li data-i18n="trust.2">🔒 No login, no data stored</li>
+        <li data-i18n="trust.3">📚 Sourced from WHO · CDC · NHS</li>
       </ul>
     </div>
 
@@ -81,7 +87,7 @@
           <div class="bubble bot">Show facilities → Fever Hospital, Nallakunta (Government) · 4.2 km</div>
         </div>
         <div class="mini-foot">
-          <input type="text" placeholder="Ask about symptoms or services…" id="heroChatInput" />
+          <input type="text" placeholder="Ask about symptoms or services…" id="heroChatInput" data-i18n-placeholder="mini.ask" />
         </div>
       </div>
       <div class="float-pill pill-1">🩺 Pattern match, not a diagnosis</div>
@@ -90,62 +96,62 @@
   </div>
 
   <div class="stat-strip" id="statStrip">
-    <div class="stat"><strong>—</strong><span>conditions in the knowledge base</span></div>
-    <div class="stat"><strong>—</strong><span>symptoms you can select</span></div>
-    <div class="stat"><strong>—</strong><span>Hyderabad facilities mapped</span></div>
-    <div class="stat"><strong>—</strong><span>public health sources</span></div>
+    <div class="stat"><strong>—</strong><span data-i18n="stat.conditions">conditions in the knowledge base</span></div>
+    <div class="stat"><strong>—</strong><span data-i18n="stat.symptoms">symptoms you can select</span></div>
+    <div class="stat"><strong>—</strong><span data-i18n="stat.facilities">Hyderabad facilities mapped</span></div>
+    <div class="stat"><strong>—</strong><span data-i18n="stat.sources">public health sources</span></div>
   </div>
 
-  <h2 class="section-title">Four ways Susrutha helps you</h2>
-  <p class="section-sub">Every feature answers one question: <em>“what should I do next?”</em></p>
+  <h2 class="section-title" data-i18n="home.features">Four ways Susrutha helps you</h2>
+  <p class="section-sub" data-i18n="home.sub">Every feature answers one question: <em>“what should I do next?”</em></p>
 
   <div class="feature-grid">
     <article class="feature" data-tab="checker">
       <span class="fico fico-teal">🩺</span>
-      <h3>1 · Symptom Checker</h3>
-      <p>Tick your symptoms, add age and duration. We score your pattern against published
+      <h3 data-i18n="feat1.t">1 · Symptom Checker</h3>
+      <p data-i18n="feat1.b">Tick your symptoms, add age and duration. We score your pattern against published
         symptom descriptions and show which conditions fit best — with the red flags to watch for and the exact urgency level.</p>
-      <span class="flink">Try it →</span>
+      <span class="flink" data-i18n="feat1.link">Try it →</span>
     </article>
     <article class="feature" data-tab="care">
       <span class="fico fico-indigo">🏥</span>
-      <h3>2 · Find Care in Hyderabad</h3>
-      <p>Pick a condition or specialty and see government hospitals, private hospitals and
+      <h3 data-i18n="feat2.t">2 · Find Care in Hyderabad</h3>
+      <p data-i18n="feat2.b">Pick a condition or specialty and see government hospitals, private hospitals and
         diagnostic labs on a live map — with distance from your area, what each one offers and one-tap directions.</p>
-      <span class="flink">Open the map →</span>
+      <span class="flink" data-i18n="feat2.link">Open the map →</span>
     </article>
     <article class="feature" data-tab="library">
       <span class="fico fico-amber">📚</span>
-      <h3>3 · Health Library</h3>
-      <p>Plain-language guides for 15 common conditions: symptoms, precautions, warning signs,
+      <h3 data-i18n="feat3.t">3 · Health Library</h3>
+      <p data-i18n="feat3.b">Plain-language guides for 15 common conditions: symptoms, precautions, warning signs,
         home care for minor illnesses and the tests a doctor would usually advise.</p>
-      <span class="flink">Browse library →</span>
+      <span class="flink" data-i18n="feat3.link">Browse library →</span>
     </article>
     <article class="feature" data-feature="chat">
       <span class="fico fico-rose">💬</span>
-      <h3>4 · Susrutha Assistant</h3>
-      <p>A transparent, rule-based assistant that answers everyday health questions, explains
+      <h3 data-i18n="feat4.t">4 · Susrutha Assistant</h3>
+      <p data-i18n="feat4.b">A transparent, rule-based assistant that answers everyday health questions, explains
         first aid like the ORS recipe, and routes emergencies straight to 108.</p>
-      <span class="flink">Chat now →</span>
+      <span class="flink" data-i18n="feat4.link">Chat now →</span>
     </article>
   </div>
 
-  <h2 class="section-title">How a check works</h2>
+  <h2 class="section-title" data-i18n="home.steps">How a check works</h2>
   <div class="steps-row">
-    <div class="step"><span>1</span><h4>Tell us the symptoms</h4><p>Search or tick from 70 plain-language symptoms grouped by body system.</p></div>
-    <div class="step"><span>2</span><h4>Add your context</h4><p>Age, how many days, and risk factors like pregnancy or diabetes — optional and never stored.</p></div>
-    <div class="step"><span>3</span><h4>See the pattern</h4><p>A weighted match against each condition's published symptom list, ranked and honestly labelled.</p></div>
-    <div class="step"><span>4</span><h4>Act on the urgency</h4><p>Self-care, routine visit, same-day doctor or emergency — plus where to go in Hyderabad.</p></div>
+    <div class="step"><span>1</span><h4 data-i18n="step1.t">Tell us the symptoms</h4><p data-i18n="step1.b">Search or tick from 70 plain-language symptoms grouped by body system.</p></div>
+    <div class="step"><span>2</span><h4 data-i18n="step2t.t">Add your context</h4><p data-i18n="step2t.b">Age, how many days, and risk factors like pregnancy or diabetes — optional and never stored.</p></div>
+    <div class="step"><span>3</span><h4 data-i18n="step3t.t">See the pattern</h4><p data-i18n="step3t.b">A weighted match against each condition's published symptom list, ranked and honestly labelled.</p></div>
+    <div class="step"><span>4</span><h4 data-i18n="step4.t">Act on the urgency</h4><p data-i18n="step4.b">Self-care, routine visit, same-day doctor or emergency — plus where to go in Hyderabad.</p></div>
   </div>
 
   <div class="two-col">
     <div class="panel pad">
-      <h3 class="panel-title">🛡️ What Susrutha is — and is not</h3>
+      <h3 class="panel-title" data-i18n="home.is">🛡️ What Susrutha is — and is not</h3>
       <ul class="tick-list">
-        <li><strong>Is:</strong> a health-literacy and navigation tool. It summarises public health guidance and helps you reach care faster.</li>
-        <li><strong>Is not:</strong> a doctor, a diagnosis, or a prescription. Symptoms overlap across many illnesses, and only a clinician can examine, test and confirm.</li>
-        <li><strong>Is:</strong> transparent. Every condition card names its source (WHO, CDC, NHS, MedlinePlus) so you can verify it.</li>
-        <li><strong>Is not:</strong> a data collector. No account, no database, no tracking of your health inputs.</li>
+        <li data-i18n="is.1"><strong>Is:</strong> a health-literacy and navigation tool. It summarises public health guidance and helps you reach care faster.</li>
+        <li data-i18n="is.2"><strong>Is not:</strong> a doctor, a diagnosis, or a prescription. Symptoms overlap across many illnesses, and only a clinician can examine, test and confirm.</li>
+        <li data-i18n="is.3"><strong>Is:</strong> transparent. Every condition card names its source (WHO, CDC, NHS, MedlinePlus) so you can verify it.</li>
+        <li data-i18n="is.4"><strong>Is not:</strong> a data collector. No account, no database, no tracking of your health inputs.</li>
       </ul>
     </div>
     <div class="panel pad">
@@ -161,17 +167,17 @@
 <section class="tab-panel" id="tab-checker">
   <div class="page-head">
     <div>
-      <span class="eyebrow">Core feature · early assistance</span>
-      <h1>Symptom Checker &amp; Risk Awareness</h1>
-      <p class="muted">Choose what you feel. Susrutha compares your pattern with published symptom
+      <span class="eyebrow" data-i18n="chk.eyebrow">Core feature · early assistance</span>
+      <h1 data-i18n="chk.title">Symptom Checker &amp; Risk Awareness</h1>
+      <p class="muted" data-i18n="chk.intro">Choose what you feel. Susrutha compares your pattern with published symptom
         descriptions and tells you how urgent it looks and what to do next.</p>
     </div>
     <div class="stepbar" id="stepBar">
-      <div class="stepdot active" data-step="1"><b>1</b><span>Symptoms</span></div>
+      <div class="stepdot active" data-step="1"><b>1</b><span data-i18n="dot.symptoms">Symptoms</span></div>
       <div class="stepline"></div>
-      <div class="stepdot" data-step="2"><b>2</b><span>About you</span></div>
+      <div class="stepdot" data-step="2"><b>2</b><span data-i18n="dot.about">About you</span></div>
       <div class="stepline"></div>
-      <div class="stepdot" data-step="3"><b>3</b><span>Result</span></div>
+      <div class="stepdot" data-step="3"><b>3</b><span data-i18n="dot.result">Result</span></div>
     </div>
   </div>
 
@@ -179,12 +185,12 @@
   <div class="wizard-step" id="step1">
     <div class="panel">
       <div class="panel-head">
-        <h3>What are you feeling?</h3>
+        <h3 data-i18n="chk.q">What are you feeling?</h3>
         <span class="counter" id="symCounter">0 selected</span>
       </div>
       <div class="search-row">
-        <input type="search" id="symSearch" placeholder="Search symptoms — e.g. fever, joint pain, burning urine…" autocomplete="off" />
-        <button class="btn btn-ghost" id="clearSymptoms">Clear</button>
+        <input type="search" id="symSearch" placeholder="Search symptoms — e.g. fever, joint pain, burning urine…" data-i18n-placeholder="sym.search" autocomplete="off" />
+        <button class="btn btn-ghost" id="clearSymptoms" data-i18n="btn.clear">Clear</button>
       </div>
       <div class="selected-tray" id="selectedTray">
         <span class="tray-empty">Nothing selected yet — tick the symptoms that apply to you.</span>
@@ -192,52 +198,52 @@
       <div class="sym-groups" id="symGroups"></div>
     </div>
     <div class="wizard-actions">
-      <span class="hint">Tip: select everything you notice — more detail means a better match.</span>
-      <button class="btn btn-primary btn-lg" id="toStep2">Continue →</button>
+      <span class="hint" data-i18n="chk.tip">Tip: select everything you notice — more detail means a better match.</span>
+      <button class="btn btn-primary btn-lg" id="toStep2" data-i18n="btn.continue">Continue →</button>
     </div>
   </div>
 
   <!-- Step 2 -->
   <div class="wizard-step hidden" id="step2">
     <div class="panel">
-      <div class="panel-head"><h3>Tell us a little about you</h3><span class="privacy-tag">🔒 stays in your browser</span></div>
-      <p class="muted small">All of this is optional, but it changes how urgent your situation is. Nothing is saved or sent anywhere except the fields you see here — they are used only to compute your result.</p>
+      <div class="panel-head"><h3 data-i18n="s2.title">Tell us a little about you</h3><span class="privacy-tag" data-i18n="s2.privacy">🔒 stays in your browser</span></div>
+      <p class="muted small" data-i18n="s2.intro">All of this is optional, but it changes how urgent your situation is. Nothing is saved or sent anywhere except the fields you see here — they are used only to compute your result.</p>
       <div class="form-grid">
         <label class="field">
-          <span>Age (years)</span>
-          <input type="number" id="pAge" min="0" max="120" placeholder="e.g. 28" />
+          <span data-i18n="f.age">Age (years)</span>
+          <input type="number" id="pAge" min="0" max="120" placeholder="e.g. 28" data-i18n-placeholder="ph.age" />
         </label>
         <label class="field">
-          <span>How many days have you had this?</span>
+          <span data-i18n="f.days">How many days have you had this?</span>
           <select id="pDays">
-            <option value="">Not sure</option>
-            <option value="0">Started today</option>
-            <option value="1">1 day</option>
-            <option value="2">2–3 days</option>
-            <option value="5">4–7 days</option>
-            <option value="10">More than a week</option>
-            <option value="20">More than 2 weeks</option>
+            <option value="" data-i18n="days.none">Not sure</option>
+            <option value="0" data-i18n="days.d0">Started today</option>
+            <option value="1" data-i18n="days.d1">1 day</option>
+            <option value="2" data-i18n="days.d2">2–3 days</option>
+            <option value="5" data-i18n="days.d5">4–7 days</option>
+            <option value="10" data-i18n="days.d10">More than a week</option>
+            <option value="20" data-i18n="days.d20">More than 2 weeks</option>
           </select>
         </label>
         <label class="field">
-          <span>How severe does it feel?</span>
+          <span data-i18n="f.sev">How severe does it feel?</span>
           <select id="pSeverity">
-            <option value="mild">Mild — I can do my normal day</option>
-            <option value="moderate" selected>Moderate — it is disturbing me</option>
-            <option value="severe">Severe — I cannot manage it</option>
+            <option value="mild" data-i18n="sev.mild">Mild — I can do my normal day</option>
+            <option value="moderate" selected data-i18n="sev.mod">Moderate — it is disturbing me</option>
+            <option value="severe" data-i18n="sev.sev">Severe — I cannot manage it</option>
           </select>
         </label>
         <label class="field checkline">
           <input type="checkbox" id="pPregnant" />
-          <span>Pregnant (or possibly pregnant)</span>
+          <span data-i18n="f.pregnant">Pregnant (or possibly pregnant)</span>
         </label>
       </div>
-      <h4 class="mini-title">Any long-term conditions? <span class="muted small">(select all that apply)</span></h4>
+      <h4 class="mini-title"><span data-i18n="f.chronic">Any long-term conditions?</span> <span class="muted small" data-i18n="f.chronichint">(select all that apply)</span></h4>
       <div class="chip-row" id="chronicChips"></div>
     </div>
     <div class="wizard-actions">
-      <button class="btn btn-ghost" id="backToStep1">← Back</button>
-      <button class="btn btn-primary btn-lg" id="runAssess">Get my guidance →</button>
+      <button class="btn btn-ghost" id="backToStep1" data-i18n="btn.back">← Back</button>
+      <button class="btn btn-primary btn-lg" id="runAssess" data-i18n="btn.guidance">Get my guidance →</button>
     </div>
   </div>
 
@@ -245,8 +251,8 @@
   <div class="wizard-step hidden" id="step3">
     <div id="resultRoot"></div>
     <div class="wizard-actions">
-      <button class="btn btn-ghost" id="restart">↺ Start over</button>
-      <button class="btn btn-ghost" id="editAnswers">Edit answers</button>
+      <button class="btn btn-ghost" id="restart" data-i18n="btn.restart">↺ Start over</button>
+      <button class="btn btn-ghost" id="editAnswers" data-i18n="btn.edit">Edit answers</button>
     </div>
   </div>
 </section>
@@ -255,50 +261,50 @@
 <section class="tab-panel" id="tab-care">
   <div class="page-head">
     <div>
-      <span class="eyebrow">Core feature · facility discovery</span>
-      <h1>Find Care in Hyderabad</h1>
-      <p class="muted">Government and private hospitals plus diagnostic laboratories — filtered by
+      <span class="eyebrow" data-i18n="fc.eyebrow">Core feature · facility discovery</span>
+      <h1 data-i18n="fc.title">Find Care in Hyderabad</h1>
+      <p class="muted" data-i18n="fc.intro">Government and private hospitals plus diagnostic laboratories — filtered by
         the condition or specialty you need, sorted by distance from your area.</p>
     </div>
-    <button class="btn btn-emergency" id="emergencyBtn2"><span class="dot"></span> Emergency: 108</button>
+    <button class="btn btn-emergency" id="emergencyBtn2"><span class="dot"></span> <span data-i18n="emg.short">Emergency: 108</span></button>
   </div>
 
   <div class="panel pad care-controls">
     <div class="form-row">
       <label class="field">
-        <span>What do you need care for?</span>
+        <span data-i18n="fc.cond">What do you need care for?</span>
         <select id="careCondition">
-          <option value="">Any condition</option>
+          <option value="" data-i18n="fc.any">Any condition</option>
         </select>
       </label>
       <label class="field">
-        <span>or a specialty</span>
-        <select id="careSpecialty"><option value="All">All specialties</option></select>
+        <span data-i18n="fc.spec">or a specialty</span>
+        <select id="careSpecialty"><option value="All" data-i18n="fc.allspec">All specialties</option></select>
       </label>
       <label class="field">
-        <span>Your area</span>
+        <span data-i18n="fc.area">Your area</span>
         <select id="careLocality"></select>
       </label>
       <label class="field">
-        <span>Type</span>
+        <span data-i18n="fc.type">Type</span>
         <select id="careSector">
-          <option value="all">All facilities</option>
-          <option value="Government">Government</option>
-          <option value="Private">Private</option>
-          <option value="Diagnostic Lab">Diagnostic labs</option>
+          <option value="all" data-i18n="sector.all">All facilities</option>
+          <option value="Government" data-i18n="sector.gov">Government</option>
+          <option value="Private" data-i18n="sector.pri">Private</option>
+          <option value="Diagnostic Lab" data-i18n="sector.lab">Diagnostic labs</option>
         </select>
       </label>
       <label class="field">
-        <span>Sort by</span>
+        <span data-i18n="fc.sort">Sort by</span>
         <select id="careOrder">
-          <option value="auto">Best for me (auto)</option>
-          <option value="distance">Nearest first</option>
-          <option value="relevance">Best specialty match</option>
+          <option value="auto" data-i18n="order.auto">Best for me (auto)</option>
+          <option value="distance" data-i18n="order.dist">Nearest first</option>
+          <option value="relevance" data-i18n="order.rel">Best specialty match</option>
         </select>
       </label>
     </div>
     <div class="care-controls-foot">
-      <button class="btn btn-ghost" id="useLocation">📍 Use my exact location</button>
+      <button class="btn btn-ghost" id="useLocation" data-i18n="fc.useloc">📍 Use my exact location</button>
       <span class="muted small" id="careMeta">Choose a condition to see tailored facilities.</span>
     </div>
   </div>
@@ -313,7 +319,7 @@
     </div>
     <div class="facility-panel">
       <div class="facility-head">
-        <h3 id="facilityTitle">Facilities</h3>
+        <h3 id="facilityTitle" data-i18n="fc.facilities">Facilities</h3>
         <span class="counter" id="facilityCount">—</span>
       </div>
       <div class="facility-list" id="facilityList">
@@ -323,8 +329,8 @@
   </div>
 
   <div class="panel pad note-panel">
-    <strong>ℹ️ Before you travel</strong>
-    <p class="small muted" id="facilityNote">Facility names and areas are real; map pins are approximate.
+    <strong data-i18n="fc.noteTitle">ℹ️ Before you travel</strong>
+    <p class="small muted" id="facilityNote" data-i18n="fc.note">Facility names and areas are real; map pins are approximate.
       Always call the hospital to confirm the entrance, OPD timings, and that the test you need is
       available the same day. In an emergency, go to the nearest emergency department rather than
       travelling across the city.</p>
@@ -335,18 +341,59 @@
 <section class="tab-panel" id="tab-library">
   <div class="page-head">
     <div>
-      <span class="eyebrow">Core feature · health information assistance</span>
-      <h1>Health Library</h1>
-      <p class="muted">Plain-language guides built from WHO, CDC, NHS and MedlinePlus material.
+      <span class="eyebrow" data-i18n="lib.eyebrow">Core feature · health information assistance</span>
+      <h1 data-i18n="lib.title">Health Library</h1>
+      <p class="muted" data-i18n="lib.intro">Plain-language guides built from WHO, CDC, NHS and MedlinePlus material.
         Each card shows how urgent the condition usually is and the red flags that mean “see a doctor now”.</p>
     </div>
   </div>
   <div class="search-row">
-    <input type="search" id="libSearch" placeholder="Search a condition, a symptom or a topic — e.g. dengue, rash, blood sugar…" />
+    <input type="search" id="libSearch" placeholder="Search a condition, a symptom or a topic — e.g. dengue, rash, blood sugar…" data-i18n-placeholder="lib.search" />
     <span class="counter" id="libCount">—</span>
   </div>
   <div class="chip-row" id="libFilters"></div>
   <div class="lib-grid" id="libGrid"></div>
+</section>
+
+<!-- ------------------------ DAILY HEALTH ACTIVITY -------------------- -->
+<section class="tab-panel" id="tab-activity">
+  <div class="page-head">
+    <div>
+      <span class="eyebrow" data-i18n="act.eyebrow">Wellbeing · small, everyday habits</span>
+      <h1 data-i18n="act.title">Daily Health Activity</h1>
+      <p class="muted" data-i18n="act.intro">One gentle activity is featured each day. It is optional, always
+        safe to skip, and only ever a small suggestion for general wellbeing — not medical advice.</p>
+    </div>
+  </div>
+
+  <div class="activity-layout">
+    <article class="panel pad activity-card" id="activityCard">
+      <div class="activity-head">
+        <span class="fico fico-teal" id="activityIcon" aria-hidden="true">💧</span>
+        <div class="activity-meta">
+          <span class="counter" id="activityDate">—</span>
+          <span class="pill" id="activityCategory">—</span>
+          <span class="pill" id="activityDuration">—</span>
+        </div>
+      </div>
+      <h2 id="activityTitle" class="activity-title">—</h2>
+      <p class="activity-why" id="activityWhy">—</p>
+      <ol class="activity-steps" id="activitySteps"></ol>
+      <p class="activity-skip muted small" id="activityAlt">—</p>
+      <div class="activity-actions" id="activityActions">
+        <button class="btn btn-primary" id="activityComplete" data-i18n="act.complete">Mark as completed</button>
+        <button class="btn btn-ghost" id="activitySkip" data-i18n="act.skip">Not today / skip</button>
+      </div>
+      <p class="activity-done hidden" id="activityDone"></p>
+    </article>
+
+    <aside class="panel pad activity-side">
+      <h3 data-i18n="act.weekTitle">This week</h3>
+      <div class="week-dots" id="weekDots" aria-live="polite"></div>
+      <p class="muted small" id="weekSummary">—</p>
+      <div class="notice small" id="activityPrivacy">—</div>
+    </aside>
+  </div>
 </section>
 
 </main>
@@ -361,39 +408,39 @@
         “well-heard”, and listening well is the first act of care.</p>
     </div>
     <div>
-      <strong>Medical disclaimer</strong>
-      <p class="small" id="footDisclaimer">General health information only. Not a diagnosis, not a prescription, and not a substitute for a qualified doctor.</p>
+      <strong data-i18n="foot.disclaimer">Medical disclaimer</strong>
+      <p class="small" id="footDisclaimer" data-i18n="foot.discText">General health information only. Not a diagnosis, not a prescription, and not a substitute for a qualified doctor.</p>
     </div>
     <div>
-      <strong>Privacy</strong>
-      <p class="small">No login, no database, no tracking of health inputs. Assessments are computed in memory and shown only to you.</p>
+      <strong data-i18n="foot.privacy">Privacy</strong>
+      <p class="small" data-i18n="foot.privacyText">No login, no database, no tracking of health inputs. Assessments are computed in memory and shown only to you.</p>
     </div>
   </div>
   <div class="foot-base small">
-    <span>Prototype · demo data labelled as such · 2026</span>
-    <span>Emergency: 108 · Ambulance 108 · National 112 · Health helpline 104</span>
+    <span data-i18n="foot.base">Prototype · demo data labelled as such · 2026</span>
+    <span data-i18n="foot.emg">Emergency: 108 · Ambulance 108 · National 112 · Health helpline 104</span>
   </div>
 </footer>
 
 <!-- ============================= CHATBOT ============================ -->
 <button class="chat-fab" id="chatFab" aria-label="Open the Susrutha Assistant">
   <svg viewBox="0 0 24 24" fill="none"><path d="M21 12a8 8 0 0 1-8 8H8l-4 3v-5.5A8 8 0 0 1 13 4a8 8 0 0 1 8 8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="10" cy="12" r="1.1" fill="currentColor"/><circle cx="13.5" cy="12" r="1.1" fill="currentColor"/><circle cx="17" cy="12" r="1.1" fill="currentColor"/></svg>
-  <span class="fab-label">Ask Susrutha</span>
+  <span class="fab-label" data-i18n="chat.fab">Ask Susrutha</span>
 </button>
 
 <aside class="chat-panel" id="chatPanel" aria-live="polite">
   <div class="chat-head">
     <div class="chat-id">
       <span class="avatar">🩺</span>
-      <div><strong>Susrutha Assistant</strong><em>Health information · not a doctor</em></div>
+      <div><strong data-i18n="chat.name">Susrutha Assistant</strong><em data-i18n="chat.sub">Health information · not a doctor</em></div>
     </div>
     <button class="iconbtn" id="chatClose" aria-label="Close chat">✕</button>
   </div>
   <div class="chat-body" id="chatBody"></div>
   <div class="chat-suggest" id="chatSuggest"></div>
   <form class="chat-input" id="chatForm">
-    <input type="text" id="chatInput" placeholder="Ask about symptoms, prevention, tests or facilities…" autocomplete="off" />
-    <button type="submit" class="btn btn-primary" aria-label="Send">Send</button>
+    <input type="text" id="chatInput" placeholder="Ask about symptoms, prevention, tests or facilities…" data-i18n-placeholder="chat.placeholder" autocomplete="off" />
+    <button type="submit" class="btn btn-primary" data-i18n="chat.send">Send</button>
   </form>
 </aside>
 

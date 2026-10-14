@@ -1,0 +1,384 @@
+{
+  "note": "Curated wellbeing activities for the Daily Health Activity feature. These are general wellbeing suggestions only: no medical claims, no fixed water quantities, no strenuous exercise, and every activity offers an easier alternative. Extend the library by appending an object with a new id - the daily rotation picks activities by date, so the same activity is shown for the whole day in every language.",
+  "summary": {
+    "label": {
+      "en": "Completed {done} of the last 7 days",
+      "te": "గత 7 రోజుల్లో {done} పూర్తయ్యాయి",
+      "hi": "पिछले 7 दिनों में {done} पूर्ण"
+    },
+    "empty": {
+      "en": "Nothing marked yet — today is a good start.",
+      "te": "ఇంకా ఏమీ గుర్తించబడలేదు — ఈ రోజు మంచి ప్రారంభం.",
+      "hi": "अभी कुछ दर्ज नहीं — आज से शुरुआत अच्छी है."
+    },
+    "storage": {
+      "en": "Completions are saved in this browser only — clearing your browser data clears them too.",
+      "te": "పూర్తయినవి మీ బ్రౌజర్‌లో మాత్రమే నిల్వ అవుతాయి — బ్రౌజర్ డేటా తొలగిస్తే అవి కూడా పోతాయి.",
+      "hi": "पूर्ण गतिविधियाँ केवल इसी ब्राउज़र में संग्रहीत होती हैं — ब्राउज़र डेटा मिटाने पर ये भी मिट जाएँगी."
+    }
+  },
+  "safety": {
+    "en": "General wellbeing suggestions only, not medical advice. If anything is uncomfortable or unsuitable for you, skip it — and if this feels like a medical problem, use the Symptom Checker or call 108.",
+    "te": "ఇవి సాధారణ ఆరోగ్య సూచనలు మాత్రమే, వైద్య సలహా కాదు. ఏదైనా అసౌకర్యంగా లేదా మీకు అనుకూలంగా లేకపోతే దాన్ని దాటవేయండి — ఇది వైద్య సమస్యలా అనిపిస్తే లక్షణాల తనిఖీని ఉపయోగించండి లేదా 108‌కి ఫోన్ చేయండి.",
+    "hi": "ये केवल सामान्य कल्याण सुझाव हैं, चिकित्सा सलाह नहीं. कुछ भी असहज या अनुपयुक्त लगे तो उसे छोड़ दें — और अगर यह स्वास्थ्य समस्या जैसा लगे तो लक्षण जाँच इस्तेमाल करें या 108 पर कॉल करें."
+  },
+  "activities": [
+    {
+      "id": "hydration",
+      "icon": "💧",
+      "category": {
+        "en": "Hydration",
+        "te": "నీరు తాగడం",
+        "hi": "पानी पीना"
+      },
+      "title": {
+        "en": "A water break",
+        "te": "నీటి విరామం",
+        "hi": "पानी का विराम"
+      },
+      "why": {
+        "en": "Water helps your body carry on with the day's work. A small break to drink whenever you feel thirsty is a simple way to look after yourself.",
+        "te": "మీ శరీరం రోజు పనిని కొనసాగించడానికి నీరు సహాయపడుతుంది. దాహం అనిపించినప్పుడు తాగడానికి చిన్న విరామం తీసుకోవడం మిమ్మల్ని జాగ్రత్తగా చూసుకోవడానికి సులభమైన మార్గం.",
+        "hi": "पानी शरीर को दिनभर के काम में मदद करता है. प्यास लगने पर थोड़ा रुककर पानी पीना खुद की देखभाल का एक सरल तरीका है."
+      },
+      "steps": {
+        "en": [
+          "Pause whatever you are doing for a moment.",
+          "Take a few comfortable sips of water, only as much as satisfies your thirst.",
+          "Carry on with your day."
+        ],
+        "te": [
+          "మీరు చేస్తున్న పనిని కాసేపు ఆపండి.",
+          "దాహం తీరేలా కొన్ని సిప్పుల నీరు మాత్రమే తాగండి.",
+          "మీ రోజు కొనసాగించండి."
+        ],
+        "hi": [
+          "जो कुछ भी कर रहे हैं उसे एक पल रोकें.",
+          "प्यास बुझने तक ही कुछ घूँट पानी पिएँ.",
+          "अपना दिन जारी रखें."
+        ]
+      },
+      "duration": {
+        "en": "1–2 minutes",
+        "te": "1–2 నిమిషాలు",
+        "hi": "1–2 मिनट"
+      },
+      "done": {
+        "en": "Nice — a small pause that helps.",
+        "te": "బాగుంది — చిన్న విరామం, ఉపయోగకరం.",
+        "hi": "अच्छा — एक छोटा विराम, उपयोगी."
+      },
+      "alt": {
+        "en": "If you do not feel like drinking right now, note it and try again later.",
+        "te": "ఇప్పుడు తాగాలనిపించకపోతే, దాన్ని గుర్తుంచుకుని తర్వాత మళ్లీ ప్రయత్నించండి.",
+        "hi": "अभी मन न हो तो याद रखें और बाद में फिर कोशिश करें."
+      }
+    },
+    {
+      "id": "walking",
+      "icon": "🚶",
+      "category": {
+        "en": "Walking",
+        "te": "నడక",
+        "hi": "चलना"
+      },
+      "title": {
+        "en": "A comfortable walk",
+        "te": "సౌకర్యవంతమైన నడక",
+        "hi": "आरामदायक सैर"
+      },
+      "why": {
+        "en": "A short walk is an easy way to move your body and change your surroundings — at your own pace, wherever you feel comfortable.",
+        "te": "కొంత సేపు నడవడం మీ శరీరాన్ని కదిలించి, చుట్టూ పరిసరాలను మార్చుకోవడానికి సులభమైన మార్గం — మీ వేగంలో, మీకు అనుకూలమైన చోట.",
+        "hi": "थोड़ी सैर शरीर को हिलाने और माहौल बदलने का सरल तरीका है — अपनी गति से, जहाँ आपको सुविधा हो."
+      },
+      "steps": {
+        "en": [
+          "Choose a safe route, indoors or outdoors.",
+          "Walk at a pace that feels easy and comfortable.",
+          "Stop whenever you feel like it."
+        ],
+        "te": [
+          "సురక్షితమైన దారి ఎంచుకోండి — లోపల లేదా బయట.",
+          "సులభంగా, సౌకర్యంగా అనిపించే వేగంలో నడవండి.",
+          "మీకు అనిపించినప్పుడు ఆపండి."
+        ],
+        "hi": [
+          "सुरक्षित रास्ता चुनें — घर के अंदर या बाहर.",
+          "ऐसी गति से चलें जो आरामदायक लगे.",
+          "जब मन करे रुक जाएँ."
+        ]
+      },
+      "duration": {
+        "en": "5–10 minutes",
+        "te": "5–10 నిమిషాలు",
+        "hi": "5–10 मिनट"
+      },
+      "done": {
+        "en": "Well done — movement counts, however small.",
+        "te": "బాగా చేశారు — ఎంత చిన్నదైనా కదలిక ముఖ్యమే.",
+        "hi": "शाबाश — कितनी भी छोटी हो, हलचल मायने रखती है."
+      },
+      "alt": {
+        "en": "If walking is not comfortable today, simply stand up, stretch gently and sit back down.",
+        "te": "ఈ రోజు నడవడం అనుకూలంగా లేకపోతే, కేవలం లేచి, సులభంగా సాగదీసి, తిరిగి కూర్చోండి.",
+        "hi": "आज चलना सहज न हो तो बस खड़े हों, हल्का सा स्ट्रेच करें और वापस बैठ जाएँ."
+      }
+    },
+    {
+      "id": "yoga",
+      "icon": "🧘",
+      "category": {
+        "en": "Yoga",
+        "te": "యోగా",
+        "hi": "योग"
+      },
+      "title": {
+        "en": "A gentle, beginner-friendly pose",
+        "te": "సులభమైన, ప్రారంభకులకు అనుకూలమైన భంగిమ",
+        "hi": "सरल, शुरुआती के लिए उपयुक्त मुद्रा"
+      },
+      "why": {
+        "en": "A simple seated posture and a few slow breaths give you a quiet moment before you carry on. Nothing has to be flexible or difficult.",
+        "te": "సరళమైన కూర్చున్న భంగిమ, కొన్ని నెమ్మది శ్వాసలు మీకు ముందుకు సాగే ముందు ప్రశాంతమైన క్షణాన్ని ఇస్తాయి. సాగడం లేదా కష్టమైనది ఏదీ అవసరం లేదు.",
+        "hi": "सरल बैठक और कुछ धीमी साँसें आगे बढ़ने से पहले एक शांत पल देती हैं. कुछ भी कठिन या ज़ोर से झुकने वाला ज़रूरी नहीं."
+      },
+      "steps": {
+        "en": [
+          "Sit comfortably on a chair or on the floor, with your back easy.",
+          "Let your shoulders drop and rest your hands.",
+          "Breathe in and out slowly a few times, then stop."
+        ],
+        "te": [
+          "కుర్చీలో లేదా నేలపై వెన్నెముక సడలగా ఉండేలా సౌకర్యంగా కూర్చోండి.",
+          "భుజాలు వదులుగా వేసి, చేతులకు విశ్రాంతి ఇవ్వండి.",
+          "కొన్నిసార్లు నెమ్మదిగా శ్వాస తీసుకుని వదలండి, తర్వాత ఆపండి."
+        ],
+        "hi": [
+          "कुर्सी या फ़र्श पर आराम से बैठें, पीठ ढीली रहने दें.",
+          "कंधों को ढीला छोड़ें और हाथ आराम से रखें.",
+          "कुछ बार धीरे से साँस लें और छोड़ें, फिर रुक जाएँ."
+        ]
+      },
+      "duration": {
+        "en": "2–3 minutes",
+        "te": "2–3 నిమిషాలు",
+        "hi": "2–3 मिनट"
+      },
+      "done": {
+        "en": "Calm and steady — nicely done.",
+        "te": "ప్రశాంతంగా, స్థిరంగా — బాగా చేశారు.",
+        "hi": "शांत और स्थिर — बढ़िया."
+      },
+      "alt": {
+        "en": "If sitting on the floor is not comfortable, do exactly the same on a chair.",
+        "te": "నేలపై కూర్చోవడం అసౌకర్యంగా ఉంటే, కుర్చీపై అదే విధంగా చేయండి.",
+        "hi": "फ़र्श पर बैठना असहज हो तो कुर्सी पर बिलकुल वैसा ही करें."
+      }
+    },
+    {
+      "id": "stretching",
+      "icon": "🙆",
+      "category": {
+        "en": "Stretching",
+        "te": "సాగడం",
+        "hi": "स्ट्रेचिंग"
+      },
+      "title": {
+        "en": "A short stretching break",
+        "te": "చిన్న సాగే విరామం",
+        "hi": "थोड़ा स्ट्रेचिंग विराम"
+      },
+      "why": {
+        "en": "After sitting for a while, a few easy stretches give your body a chance to move in a different way.",
+        "te": "కాసేపు కూర్చున్న తర్వాత, కొన్ని సులభమైన సాగింపులు మీ శరీరానికి వేరే విధంగా కదలడానికి అవకాశం ఇస్తాయి.",
+        "hi": "कुछ देर बैठने के बाद कुछ आसान स्ट्रेच शरीर को अलग तरीके से हिलने का मौका देते हैं."
+      },
+      "steps": {
+        "en": [
+          "Sit or stand with both feet on the ground.",
+          "Gently roll your shoulders and reach your arms up — only as far as is comfortable.",
+          "Release slowly and repeat once or twice."
+        ],
+        "te": [
+          "రెండు పాదాలు నేలపై ఉండేలా కూర్చోండి లేదా నిలబడండి.",
+          "భుజాలను సులభంగా తిప్పి, చేతులను పైకి చాపండి — సౌకర్యమైనంత మాత్రమే.",
+          "నెమ్మదిగా వదిలి, ఒకటి లేదా రెండుసార్లు పునరావృతం చేయండి."
+        ],
+        "hi": [
+          "दोनों पैर ज़मीन पर रखकर बैठें या खड़े हों.",
+          "कंधों को धीरे घुमाएँ और हाथ ऊपर उठाएँ — जहाँ तक आरामदायक हो.",
+          "धीरे से छोड़ें और एक-दो बार दोहराएँ."
+        ]
+      },
+      "duration": {
+        "en": "2 minutes",
+        "te": "2 నిమిషాలు",
+        "hi": "2 मिनट"
+      },
+      "done": {
+        "en": "Loosened up — a good break.",
+        "te": "సడలింది — మంచి విరామం.",
+        "hi": "ढीलापन आया — अच्छा विराम."
+      },
+      "alt": {
+        "en": "Move only as far as feels comfortable, and skip any movement that hurts.",
+        "te": "సౌకర్యంగా అనిపించేంత మాత్రమే కదలిక చేయండి, నొప్పి ఇచ్చే కదలికను దాటవేయండి.",
+        "hi": "जहाँ तक आरामदायक लगे वहीं तक करें, और जिससे दर्द हो उसे छोड़ दें."
+      }
+    },
+    {
+      "id": "mindfulness",
+      "icon": "🌬️",
+      "category": {
+        "en": "Mindfulness",
+        "te": "ధ్యానం",
+        "hi": "सचेतना"
+      },
+      "title": {
+        "en": "Calm, natural breathing",
+        "te": "ప్రశాంతమైన సహజ శ్వాస",
+        "hi": "शांत, स्वाभाविक साँस"
+      },
+      "why": {
+        "en": "A minute of quiet breathing gives you a short pause in the middle of the day. Breathe normally — never force or hold your breath.",
+        "te": "ప్రశాంతమైన శ్వాసకు ఒక నిమిషం రోజు మధ్యలో చిన్న విరామం ఇస్తుంది. సాధారణంగా శ్వాస తీసుకోండి — ఎప్పుడూ బలవంతం చేయవద్దు లేదా ఆపవద్దు.",
+        "hi": "एक मिनट की शांत साँस दिन के बीच एक छोटा विराम देती है. सामान्य रूप से साँस लें — कभी ज़बरदस्ती न करें या रोकें नहीं."
+      },
+      "steps": {
+        "en": [
+          "Stop for a moment and relax your shoulders.",
+          "Breathe in and out naturally, without forcing it.",
+          "After a minute, notice how you feel and continue."
+        ],
+        "te": [
+          "కాసేపు ఆగి, భుజాలను వదులు చేయండి.",
+          "బలవంతం లేకుండా, సహజంగా శ్వాస తీసుకుని వదలండి.",
+          "ఒక నిమిషం తర్వాత మీకు ఎలా అనిపిస్తోందో గమనించి, కొనసాగించండి."
+        ],
+        "hi": [
+          "एक पल रुकें और कंधे ढीले छोड़ें.",
+          "ज़बरदस्ती किए बिना स्वाभाविक रूप से साँस लें और छोड़ें.",
+          "एक मिनट बाद अपना अहसास नोट करें और आगे बढ़ें."
+        ]
+      },
+      "duration": {
+        "en": "1 minute",
+        "te": "1 నిమిషం",
+        "hi": "1 मिनट"
+      },
+      "done": {
+        "en": "A quiet minute — well spent.",
+        "te": "ప్రశాంతమైన నిమిషం — బాగా గడిపారు.",
+        "hi": "एक शांत मिनट — अच्छा बिताया."
+      },
+      "alt": {
+        "en": "If counting breaths is uncomfortable, simply sit quietly and listen to the sounds around you.",
+        "te": "శ్వాసలు లెక్కించడం అసౌకర్యంగా ఉంటే, ప్రశాంతంగా కూర్చుని చుట్టూ వినబడే శబ్దాలు వినండి.",
+        "hi": "साँस गिनना असहज हो तो बस शांति से बैठें और आसपास की आवाज़ें सुनें."
+      }
+    },
+    {
+      "id": "screen",
+      "icon": "🖥️",
+      "category": {
+        "en": "Screen break",
+        "te": "స్క్రీన్ విరామం",
+        "hi": "स्क्रीन विराम"
+      },
+      "title": {
+        "en": "Step away from the screen",
+        "te": "స్క్రీన్ నుండి కాసేపు దూరంగా ఉండండి",
+        "hi": "स्क्रीन से थोड़ा दूर हटें"
+      },
+      "why": {
+        "en": "Looking away from the screen for a moment lets your eyes and your attention rest before you carry on.",
+        "te": "కాసేపు స్క్రీన్ నుండి దృష్టి మరల్చడం మీ కళ్లకు, మీ ఏకాగ్రతకు విశ్రాంతి ఇస్తుంది.",
+        "hi": "थोड़ी देर स्क्रीन से नज़र हटाने से आँखों और ध्यान को आराम मिलता है."
+      },
+      "steps": {
+        "en": [
+          "Look away from the screen at something far away.",
+          "Blink a few times and relax your eyes.",
+          "Stand up, move a little, then come back."
+        ],
+        "te": [
+          "స్క్రీన్ నుండి దూరంలో ఉన్నదాన్ని చూడండి.",
+          "కొన్నిసార్లు కన్ను రెప్పలు వేసి, కళ్లను విశ్రాంతి ఇవ్వండి.",
+          "లేచి, కొంత కదిలి, తిరిగి రండి."
+        ],
+        "hi": [
+          "स्क्रीन से नज़र हटाकर दूर किसी चीज़ को देखें.",
+          "कुछ बार पलकें झपकें और आँखों को आराम दें.",
+          "खड़े हों, थोड़ा चलें, फिर वापस आएँ."
+        ]
+      },
+      "duration": {
+        "en": "1–2 minutes",
+        "te": "1–2 నిమిషాలు",
+        "hi": "1–2 मिनट"
+      },
+      "done": {
+        "en": "Eyes rested — good habit.",
+        "te": "కళ్లకు విశ్రాంతి — మంచి అలవాటు.",
+        "hi": "आँखों को आराम — अच्छी आदत."
+      },
+      "alt": {
+        "en": "If you must stay at the screen, lower the brightness and blink a few times.",
+        "te": "స్క్రీన్ దగ్గరే ఉండాల్సి వస్తే, ప్రకాశాన్ని తగ్గించి, కొన్నిసార్లు కన్ను రెప్పలు వేయండి.",
+        "hi": "स्क्रीन पर ही रहना ज़रूरी हो तो चमक घटाएँ और कुछ बार पलकें झपकें."
+      }
+    },
+    {
+      "id": "sleep",
+      "icon": "🌙",
+      "category": {
+        "en": "Sleep habits",
+        "te": "నిద్ర అలవాట్లు",
+        "hi": "नींद की आदतें"
+      },
+      "title": {
+        "en": "A relaxing bedtime routine",
+        "te": "నిద్రకు ప్రశాంతమైన అలవాటు",
+        "hi": "नींद के लिए शांत दिनचर्या"
+      },
+      "why": {
+        "en": "A calm wind-down before bed — dimmer lights, the phone set aside, something quiet — makes it easier to settle for the night.",
+        "te": "నిద్రకు ముందు ప్రశాంతమైన విశ్రాంతి — తక్కువ కాంతి, ఫోన్ పక్కన పెట్టడం, ప్రశాంతమైన పని — రాత్రి నిద్రకు సులభం చేస్తాయి.",
+        "hi": "सोने से पहले शांत विराम — धीमी रोशनी, फ़ोन एक ओर रखना, कोई शांत काम — रात को सोना आसान बनाता है."
+      },
+      "steps": {
+        "en": [
+          "Dim the lights and put your phone or laptop aside.",
+          "Do one slow, quiet thing — tidying up or a few pages of a book.",
+          "Go to bed when you start to feel sleepy."
+        ],
+        "te": [
+          "కాంతిని తగ్గించి, ఫోన్ లేదా ల్యాప్‌టాప్‌ను పక్కన పెట్టండి.",
+          "ఒక నెమ్మది, ప్రశాంతమైన పని చేయండి — గది అందం చేయడం లేదా పుస్తకంలో కొన్ని పేజీలు.",
+          "నిద్ర అనిపించినప్పుడు పడుకోండి."
+        ],
+        "hi": [
+          "रोशनी धीमी करें और फ़ोन या लैपटॉप एक ओर रख दें.",
+          "कोई एक धीमा, शांत काम करें — थोड़ी सफ़ाई या किताब के कुछ पन्ने.",
+          "नींद आने लगे तो बिस्तर पर जाएँ."
+        ]
+      },
+      "duration": {
+        "en": "This evening",
+        "te": "ఈ సాయంత్రం",
+        "hi": "आज शाम"
+      },
+      "done": {
+        "en": "A calm ending to the day.",
+        "te": "రోజుకు ప్రశాంతమైన ముగింపు.",
+        "hi": "दिन का शांत अंत."
+      },
+      "alt": {
+        "en": "If you cannot switch off early tonight, try the same routine a little earlier tomorrow.",
+        "te": "ఈ రాత్రి ముందుగా విశ్రాంతి తీసుకోలేకపోతే, రేపు కొంచెం ముందుగా అదే అలవాటు ప్రయత్నించండి.",
+        "hi": "आज जल्दी आराम न हो पाए तो कल थोड़ा पहले वही दिनचर्या आज़माएँ."
+      }
+    }
+  ]
+}

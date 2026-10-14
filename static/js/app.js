@@ -49,6 +49,67 @@
       .replace(/(^|\n)_(.+?)_(?=\n|$)/g, "$1<em>$2</em>");
   }
 
+  /* --------------------------------- i18n -------------------------------- */
+  // Translation tables are fetched once from /api/i18n (single source of truth:
+  // i18n.py). Only the interface is translated - medical content returned by the
+  // API stays in its original English.
+  const I18N = { tables: { en: {} }, lang: "en" };
+
+  function tr(key) {
+    const table = I18N.tables[I18N.lang] || {};
+    return table[key] || I18N.tables.en[key] || key;
+  }
+  function tf(key, vars) {
+    return tr(key).replace(/\{(\w+)\}/g, (m, name) =>
+      vars && Object.prototype.hasOwnProperty.call(vars, name) ? String(vars[name]) : m);
+  }
+  // Care levels / match bands arrive from the API as machine-readable codes with an
+  // English label; show the localized label when we have one, otherwise keep the API's.
+  function careLabel(code, fallback) {
+    const key = `care.${code}`;
+    return I18N.tables.en[key] ? tr(key) : (fallback || code);
+  }
+  function bandLabel(code, fallback) {
+    const key = `band.${String(code).toLowerCase()}`;
+    return I18N.tables.en[key] ? tr(key) : (fallback || code);
+  }
+  function tierLabel(tier) {
+    const map = { "Best match": "tier.best", "Good match": "tier.good", "General care": "tier.general" };
+    return map[tier] ? tr(map[tier]) : tier;
+  }
+
+  async function loadI18n() {
+    const data = await api("/api/i18n");
+    I18N.tables = data.tables || { en: {} };
+  }
+
+  function initLang() {
+    const saved = localStorage.getItem("susrutha-lang") || I18N.tables.default || "en";
+    I18N.lang = I18N.tables[saved] ? saved : "en";
+  }
+
+  function setLang(code) {
+    if (!I18N.tables[code]) return;
+    I18N.lang = code;
+    localStorage.setItem("susrutha-lang", code);
+    applyI18n();
+    // Re-render the blocks that build their own translated text.
+    syncSymptoms();
+    if ($("#libGrid").children.length) loadLibrary($("#libSearch").value.trim());
+    if (state.facilities.length) loadFacilities();
+    if (state.activityDate) renderActivity(state.activity);
+  }
+
+  function applyI18n() {
+    $$("[data-i18n]").forEach((el) => { el.innerHTML = tr(el.dataset.i18n); });
+    $$("[data-i18n-placeholder]").forEach((el) => { el.placeholder = tr(el.dataset.i18nPlaceholder); });
+    document.documentElement.lang = I18N.lang;
+    const select = $("#langSelect");
+    if (select && select.value !== I18N.lang) select.value = I18N.lang;
+    const allChip = $('#libFilters [data-filter="All"]');
+    if (allChip) allChip.textContent = tr("lib.all");
+  }
+
   let toastTimer;
   function toast(message) {
     const el = $("#toast");
