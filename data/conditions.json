@@ -1,0 +1,401 @@
+{
+  "note": "Condition reference base for the Susrutha Health Partner prototype. Content is a plain-language summary of public information from WHO, CDC, NHS and MedlinePlus (source URLs listed per condition). It is DECISION SUPPORT ONLY - it is not a diagnosis and does not replace a qualified clinician.",
+  "care_levels": {
+    "emergency": "Emergency - go to the nearest emergency department now",
+    "urgent": "Urgent - arrange a same-day medical assessment",
+    "routine": "Routine - book a medical appointment soon",
+    "selfcare": "Self-care - usually managed at home, seek advice if it worsens"
+  },
+  "conditions": [
+    {
+      "id": "dengue",
+      "name": "Dengue Fever",
+      "aka": "Break-bone fever",
+      "category": "Mosquito-borne",
+      "care_level": "urgent",
+      "overview": "A viral infection spread by Aedes mosquitoes that bite during the day. It causes high fever with severe headache, pain behind the eyes and joint/muscle pain. Most people recover with fluids and rest, but a small number develop severe dengue, which is a medical emergency.",
+      "symptoms": { "high_fever": 3, "fever": 3, "pain_behind_eyes": 3, "severe_headache": 2, "joint_pain": 2, "body_ache": 2, "rash": 3, "nausea": 1, "vomiting": 2, "fatigue": 1, "bleeding_gums": 3, "blood_in_vomit": 3, "blood_in_stool": 2, "cold_clammy_skin": 2, "loss_of_appetite": 1, "abdominal_pain": 1 },
+      "precautions": [
+        "Use paracetamol for fever and pain, and avoid aspirin, ibuprofen and other anti-inflammatory painkillers until dengue has been ruled out by a doctor - they raise the risk of bleeding.",
+        "Drink plenty of safe fluids (water, ORS, coconut water, soups) to avoid dehydration.",
+        "Rest and monitor the fever chart; get a blood test (platelet count) as advised by a clinician.",
+        "Prevent mosquito bites: full-sleeve clothing, repellents, and nets; Aedes mosquitoes bite mainly in the daytime.",
+        "Remove stagnant water around the home (coolers, flower pots, tyres, drums) every week - that is where Aedes breeds."
+      ],
+      "red_flags": [
+        "Severe abdominal pain or persistent vomiting",
+        "Bleeding from gums or nose, blood in vomit or stool, or black stools",
+        "Rapid breathing or breathlessness",
+        "Cold, clammy skin, restlessness or extreme weakness",
+        "Sudden drop in fever with worsening condition (this can signal severe dengue)"
+      ],
+      "self_care": [],
+      "tests": ["Complete Blood Count (CBC) with platelet count", "NS1 antigen test (first 5 days of fever)", "Dengue IgM / IgG ELISA (after day 5)", "Haematocrit (PCV)"],
+      "specialties": ["General Medicine", "Emergency", "Fever / Tropical Diseases", "Diagnostics"],
+      "sources": [
+        { "label": "WHO - Dengue and severe dengue", "url": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue" },
+        { "label": "National Centre for Vector Borne Diseases Control (India)", "url": "https://ncvbdc.mohfw.gov.in/" }
+      ]
+    },
+    {
+      "id": "malaria",
+      "name": "Malaria",
+      "category": "Mosquito-borne",
+      "care_level": "urgent",
+      "overview": "A parasitic infection spread by the bite of an infected female Anopheles mosquito. It typically causes fever with chills and sweating. Malaria can become life-threatening quickly, so fever in an endemic area should be tested the same day.",
+      "symptoms": { "fever": 3, "high_fever": 2, "chills": 3, "headache": 2, "joint_pain": 2, "body_ache": 2, "nausea": 2, "vomiting": 2, "diarrhea": 1, "fatigue": 2, "night_sweats": 2, "confusion": 3, "jaundice": 2, "pale_skin": 2, "blood_in_urine": 2, "seizure": 3, "breathlessness": 2 },
+      "precautions": [
+        "Do not self-treat with leftover antimalarials - the medicine depends on the species and needs a prescription.",
+        "Get a blood test (peripheral smear / rapid test) the same day if you have fever with chills.",
+        "Sleep under a mosquito net and use repellents, especially between dusk and dawn when Anopheles bites.",
+        "Drain stagnant water and clear weeds around the house; keep water containers covered.",
+        "Complete the full course of treatment prescribed, even after the fever settles."
+      ],
+      "red_flags": ["Confusion, drowsiness or fits", "Difficulty breathing", "Dark or bloody urine", "Yellow eyes or skin with fever", "Extreme weakness or inability to sit up"],
+      "self_care": [],
+      "tests": ["Peripheral blood smear for malarial parasite", "Rapid malaria antigen test", "Complete Blood Count (CBC)"],
+      "specialties": ["General Medicine", "Fever / Tropical Diseases", "Emergency", "Diagnostics"],
+      "sources": [
+        { "label": "WHO - Malaria", "url": "https://www.who.int/news-room/fact-sheets/detail/malaria" },
+        { "label": "CDC - Malaria symptoms", "url": "https://www.cdc.gov/malaria/symptoms/index.html" }
+      ]
+    },
+    {
+      "id": "chikungunya",
+      "name": "Chikungunya",
+      "category": "Mosquito-borne",
+      "care_level": "urgent",
+      "overview": "A viral illness spread by the same day-biting Aedes mosquitoes that carry dengue. It causes sudden fever with intense joint pain that can last for weeks. Because it looks like dengue, a clinician should decide what testing is needed.",
+      "symptoms": { "fever": 3, "high_fever": 3, "joint_pain": 3, "rash": 2, "body_ache": 2, "headache": 2, "nausea": 1, "vomiting": 1, "fatigue": 2, "chills": 1 },
+      "precautions": [
+        "Avoid aspirin and ibuprofen until dengue is excluded - both illnesses respond to similar painkillers and bleeding risk matters.",
+        "Rest the painful joints; gentle movement after the fever settles helps stiffness.",
+        "Keep drinking fluids and treat fever with paracetamol as advised.",
+        "Use mosquito repellents and nets to avoid spreading the infection to family members.",
+        "Clear stagnant water around the home to stop Aedes breeding."
+      ],
+      "red_flags": ["Confusion or fits", "Difficulty breathing", "Very high fever that does not come down", "Bleeding from any site"],
+      "self_care": [],
+      "tests": ["Chikungunya IgM ELISA", "Complete Blood Count (CBC)", "Dengue NS1 / IgM (to exclude dengue)"],
+      "specialties": ["General Medicine", "Fever / Tropical Diseases", "Diagnostics"],
+      "sources": [{ "label": "WHO - Chikungunya", "url": "https://www.who.int/news-room/fact-sheets/detail/chikungunya" }]
+    },
+    {
+      "id": "typhoid",
+      "name": "Typhoid Fever",
+      "aka": "Enteric fever",
+      "category": "Food- and water-borne",
+      "care_level": "urgent",
+      "overview": "A bacterial infection spread through food or water contaminated by Salmonella Typhi. It causes a long, step-ladder fever with abdominal discomfort. Typhoid needs clinician-prescribed antibiotics, so a persistent fever must be evaluated.",
+      "symptoms": { "fever": 3, "high_fever": 2, "headache": 2, "abdominal_pain": 2, "constipation": 1, "diarrhea": 2, "fatigue": 2, "loss_of_appetite": 2, "rash": 1, "nausea": 1, "vomiting": 1, "confusion": 2, "blood_in_stool": 2, "severe_abdominal_pain": 2, "malaise": 1 },
+      "precautions": [
+        "Do not take leftover antibiotics from a previous illness - the choice and duration must be prescribed.",
+        "Drink boiled, filtered or bottled water and avoid raw street food and cut fruit while unwell.",
+        "Wash hands with soap before eating and after using the toilet; a diagnosed person should not prepare food for others.",
+        "Keep a written temperature record to show the doctor and take fluids regularly.",
+        "Get vaccinated against typhoid if you are at repeated risk (ask a clinician)."
+      ],
+      "red_flags": ["Severe abdominal pain or a rigid, board-like abdomen", "Bleeding in vomit or stool", "Confusion or collapse", "Fever with sudden worsening of weakness"],
+      "self_care": [],
+      "tests": ["Blood culture (most reliable)", "Widal test (supportive only)", "Typhoid IgM rapid test", "Complete Blood Count (CBC)"],
+      "specialties": ["General Medicine", "Fever / Tropical Diseases", "Gastroenterology", "Diagnostics"],
+      "sources": [
+        { "label": "WHO - Typhoid", "url": "https://www.who.int/news-room/fact-sheets/detail/typhoid" },
+        { "label": "CDC - Typhoid fever", "url": "https://www.cdc.gov/typhoid-fever/signs-symptoms/index.html" }
+      ]
+    },
+    {
+      "id": "common_cold",
+      "name": "Common Cold",
+      "category": "Respiratory",
+      "care_level": "selfcare",
+      "overview": "A mild viral infection of the nose and throat. Symptoms build up gradually over a day or two and usually settle within 7-10 days without antibiotics.",
+      "symptoms": { "runny_nose": 3, "blocked_nose": 3, "sneezing": 3, "sore_throat": 3, "cough": 2, "headache": 1, "fatigue": 1, "fever": 1, "dry_cough": 1, "loss_of_smell_taste": 1, "watery_eyes": 1, "malaise": 1 },
+      "precautions": [
+        "Antibiotics do not work on colds - avoid self-medicating with them.",
+        "Rest, drink warm fluids and use steam inhalation or saline nose drops for a blocked nose.",
+        "Cover coughs and sneezes and wash hands often to protect others at home and at work.",
+        "Paracetamol can be used for aches or mild fever if suitable for you.",
+        "See a clinician if symptoms last more than about 10 days, fever lasts more than 3 days, or breathing becomes difficult."
+      ],
+      "red_flags": ["Difficulty breathing or chest pain", "Fever above 102°F lasting more than 3 days", "Symptoms that improve and then worsen sharply"],
+      "self_care": [
+        "Rest and sleep; warm fluids (water, soups, tea) through the day",
+        "Steam inhalation twice daily and saline nasal drops for congestion",
+        "Gargle with warm salt water for a sore throat",
+        "Paracetamol for body ache or mild fever as per label - no aspirin for children"
+      ],
+      "tests": ["Usually no tests needed", "Clinician review if symptoms last more than 10 days"],
+      "specialties": ["General Medicine", "ENT", "Family Physician"],
+      "sources": [{ "label": "NHS - Common cold", "url": "https://www.nhs.uk/conditions/common-cold/" }]
+    },
+    {
+      "id": "influenza",
+      "name": "Influenza (Flu)",
+      "aka": "Seasonal flu",
+      "category": "Respiratory",
+      "care_level": "selfcare",
+      "overview": "A viral infection that starts suddenly with fever, body aches and dry cough. Most healthy people recover in about a week, but flu can be serious for children, older adults, pregnant women and people with chronic illness.",
+      "symptoms": { "fever": 3, "high_fever": 3, "chills": 3, "dry_cough": 3, "body_ache": 3, "fatigue": 3, "headache": 2, "sore_throat": 2, "runny_nose": 1, "blocked_nose": 1, "nausea": 1, "diarrhea": 1, "chest_pain": 1, "breathlessness": 1 },
+      "precautions": [
+        "Rest at home and avoid close contact with others while you have fever - flu spreads easily.",
+        "Drink fluids regularly and use paracetamol for fever and aches (never aspirin for children).",
+        "Annual flu vaccination is recommended, especially for high-risk groups - ask a clinician.",
+        "Seek prompt medical advice if you are pregnant, over 60, a young child, or have diabetes, asthma, heart or kidney disease.",
+        "Go to an emergency department for difficulty breathing, chest pain, confusion or inability to pass urine."
+      ],
+      "red_flags": ["Difficulty breathing or chest pain", "Confusion or seizures", "Not passing urine or unable to drink", "Symptoms improve then return with worse fever"],
+      "self_care": [
+        "Bed rest and plenty of warm fluids",
+        "Paracetamol for fever and body aches as per label",
+        "Steam inhalation for cough and a blocked nose",
+        "Stay home until fever has settled for 24 hours"
+      ],
+      "tests": ["Usually clinical", "Influenza rapid antigen test / RT-PCR if clinically indicated"],
+      "specialties": ["General Medicine", "Family Physician", "Paediatrics"],
+      "sources": [
+        { "label": "NHS - Flu", "url": "https://www.nhs.uk/conditions/flu/" },
+        { "label": "CDC - Flu symptoms and emergency warning signs", "url": "https://www.cdc.gov/flu/signs-symptoms/index.html" }
+      ]
+    },
+    {
+      "id": "covid19",
+      "name": "COVID-19",
+      "aka": "SARS-CoV-2 infection",
+      "category": "Respiratory",
+      "care_level": "selfcare",
+      "overview": "A viral respiratory infection. Many people have mild cold-like symptoms, but breathlessness, persistent chest pain or confusion are emergency warning signs.",
+      "symptoms": { "fever": 3, "dry_cough": 3, "sore_throat": 2, "runny_nose": 2, "blocked_nose": 1, "fatigue": 3, "headache": 2, "body_ache": 2, "loss_of_smell_taste": 3, "breathlessness": 3, "diarrhea": 1, "nausea": 1, "chest_pain": 2, "confusion": 2 },
+      "precautions": [
+        "Isolate while unwell, ventilate rooms and wear a mask around others at home.",
+        "Test if available and inform close contacts, especially high-risk family members.",
+        "Rest, drink fluids and use paracetamol for fever if suitable; do not self-prescribe steroids or antibiotics.",
+        "High-risk people (older adults, pregnancy, diabetes, heart or lung disease, low immunity) should contact a doctor early.",
+        "Check local government guidance for current testing and isolation rules."
+      ],
+      "red_flags": ["Breathlessness at rest or while talking", "Persistent chest pain or pressure", "Confusion, drowsiness or inability to stay awake", "Bluish lips or face, cold clammy skin", "Loss of speech or movement"],
+      "self_care": [
+        "Rest, isolate and drink fluids regularly",
+        "Paracetamol for fever and body ache as per label",
+        "Lie prone (on the stomach) if comfortable, to help breathing",
+        "Monitor oxygen saturation with a pulse oximeter if available; seek help below 94%"
+      ],
+      "tests": ["RT-PCR or rapid antigen test for SARS-CoV-2", "CBC and inflammatory markers if unwell"],
+      "specialties": ["General Medicine", "Pulmonology", "Emergency", "Diagnostics"],
+      "sources": [
+        { "label": "WHO - Coronavirus disease (COVID-19)", "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)" },
+        { "label": "NHS - COVID-19 symptoms", "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/" }
+      ]
+    },
+    {
+      "id": "gastroenteritis",
+      "name": "Acute Gastroenteritis (Diarrhoea)",
+      "aka": "Stomach infection, loose motions",
+      "category": "Digestive",
+      "care_level": "urgent",
+      "overview": "Inflammation of the stomach and intestines, usually from contaminated food, water or a virus. The main danger is dehydration, and oral rehydration solution (ORS) is the most important treatment.",
+      "symptoms": { "diarrhea": 3, "vomiting": 3, "nausea": 2, "abdominal_pain": 2, "fever": 2, "dehydration": 3, "fatigue": 1, "blood_in_stool": 2, "unable_to_drink": 3, "no_urine": 3, "loss_of_appetite": 1 },
+      "precautions": [
+        "Start ORS immediately and take small frequent sips - continue even if you vomit once.",
+        "Drink only boiled, filtered or bottled water; avoid outside cut fruit, ice and raw salads while unwell.",
+        "Wash hands with soap before eating and after using the toilet.",
+        "Do not take anti-diarrhoeal medicines without asking a clinician, especially if there is fever or blood in stool.",
+        "Zinc supplements for 14 days help children with diarrhoea - ask a paediatrician."
+      ],
+      "red_flags": ["Very little or no urine for 6-8 hours", "Unable to drink or keep fluids down", "Blood in stool or black stools", "Severe drowsiness, sunken eyes or very dry mouth", "Diarrhoea in a baby, older adult or pregnant woman - get care early"],
+      "self_care": [
+        "ORS: 1 litre of clean water + 6 level teaspoons of sugar + half a teaspoon of salt (WHO recipe)",
+        "Small sips every few minutes; aim for at least 2-3 litres a day for adults",
+        "Continue light food such as rice, curd, banana, khichdi as tolerated",
+        "Avoid very spicy, oily food, alcohol and caffeine until recovery"
+      ],
+      "tests": ["Stool routine and microscopy", "Stool culture if blood is present", "Serum electrolytes and creatinine if dehydrated"],
+      "specialties": ["General Medicine", "Gastroenterology", "Paediatrics", "Emergency"],
+      "sources": [{ "label": "WHO - Diarrhoeal disease", "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease" }]
+    },
+    {
+      "id": "food_poisoning",
+      "name": "Food Poisoning",
+      "aka": "Food-borne illness",
+      "category": "Digestive",
+      "care_level": "selfcare",
+      "overview": "Illness caused by eating food contaminated with bacteria or their toxins. Nausea, vomiting and diarrhoea usually start within hours of the meal and settle in 1-3 days with fluids.",
+      "symptoms": { "nausea": 3, "vomiting": 3, "diarrhea": 3, "abdominal_pain": 2, "fever": 1, "dehydration": 2, "fatigue": 1, "blood_in_stool": 2, "unable_to_drink": 2 },
+      "precautions": [
+        "Rehydrate with ORS or clean water in small, frequent sips.",
+        "Eat only light, freshly cooked food once vomiting settles; avoid milk and oily food for a day.",
+        "Refrigerate cooked food within two hours and reheat thoroughly; avoid food that has been left out.",
+        "Wash hands and cooking surfaces before and after handling food.",
+        "Seek care if there is blood in stool, high fever, or symptoms lasting more than 3 days."
+      ],
+      "red_flags": ["Blood or green vomit", "Bloody diarrhoea or high fever", "Confusion, severe breathing difficulty or collapse", "Sudden severe abdominal pain"],
+      "self_care": [
+        "ORS after every loose stool; small frequent sips if vomiting",
+        "Rest the stomach for a few hours, then light food (rice, toast, banana, curd)",
+        "Avoid anti-diarrhoeal medication unless a clinician advises it",
+        "Wash hands carefully so the infection does not spread at home"
+      ],
+      "tests": ["Usually clinical", "Stool culture if bloody diarrhoea or prolonged illness", "Electrolytes if severely dehydrated"],
+      "specialties": ["General Medicine", "Gastroenterology", "Emergency"],
+      "sources": [
+        { "label": "NHS - Food poisoning", "url": "https://www.nhs.uk/conditions/food-poisoning/" },
+        { "label": "WHO - Diarrhoeal disease", "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease" }
+      ]
+    },
+    {
+      "id": "uti",
+      "name": "Urinary Tract Infection (UTI)",
+      "category": "Urinary",
+      "care_level": "routine",
+      "overview": "A bacterial infection of the bladder or kidneys. It causes burning on urination and a need to pass urine often. Most UTIs need a short course of prescribed antibiotics.",
+      "symptoms": { "burning_urination": 3, "frequent_urination": 3, "cloudy_urine": 3, "abdominal_pain": 2, "blood_in_urine": 2, "flank_pain": 2, "fever": 2, "chills": 2, "nausea": 1, "confusion": 2 },
+      "precautions": [
+        "Drink 2-3 litres of water a day (unless a doctor has restricted fluids for you).",
+        "Do not stop prescribed antibiotics early, even if symptoms improve in two days.",
+        "Urinate when you feel the urge and empty the bladder fully; wipe front to back.",
+        "Get tested if you are pregnant, diabetic, male, or have repeated infections - urine culture guides the right antibiotic.",
+        "Seek urgent care for fever with shivering fits and back pain, which suggests kidney involvement."
+      ],
+      "red_flags": ["Fever with chills and severe back or side pain", "Confusion or drowsiness (especially in older adults)", "Blood in urine with severe pain", "No improvement within 48 hours of starting treatment"],
+      "self_care": [
+        "Drink water steadily through the day",
+        "Use a warm compress on the lower abdomen for cramping",
+        "Avoid holding urine and avoid caffeine and alcohol while recovering"
+      ],
+      "tests": ["Urine routine and microscopy", "Urine culture and sensitivity", "Ultrasound KUB if recurrent or in men/children"],
+      "specialties": ["General Medicine", "Urology", "Nephrology", "Diagnostics"],
+      "sources": [{ "label": "NHS - Urinary tract infections (UTIs)", "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/" }]
+    },
+    {
+      "id": "iron_deficiency_anaemia",
+      "name": "Iron-deficiency Anaemia",
+      "aka": "Low haemoglobin",
+      "category": "Blood",
+      "care_level": "routine",
+      "overview": "A condition where low iron stores mean the body cannot make enough healthy red blood cells, causing tiredness and breathlessness. It is very common and easily confirmed with a blood test - but the cause should always be looked for.",
+      "symptoms": { "fatigue": 3, "breathlessness": 2, "palpitations": 2, "pale_skin": 3, "headache": 2, "dizziness": 1, "loss_of_appetite": 1 },
+      "precautions": [
+        "Do not start high-dose iron tablets on your own - the dose and need should be confirmed by a blood test.",
+        "Take iron tablets with vitamin C (lemon, amla, orange) and away from tea, coffee, milk and calcium, which reduce absorption.",
+        "Keep iron tablets safely away from children - overdose is dangerous.",
+        "Ask a clinician about the underlying cause, particularly heavy periods or blood loss in the stool.",
+        "Include iron-rich foods: green leafy vegetables, jaggery, dates, liver, eggs, beans and groundnuts."
+      ],
+      "red_flags": ["Breathlessness at rest", "Chest pain or fainting", "Very rapid heartbeat with weakness", "Black stools or heavy bleeding"],
+      "self_care": [
+        "Iron-rich diet with a vitamin C source at the same meal",
+        "Avoid tea or coffee with iron-rich meals",
+        "Pregnant women: check haemoglobin at antenatal visits (government programmes provide free iron-folic acid tablets)"
+      ],
+      "tests": ["Complete Blood Count (CBC) with haemoglobin", "Serum ferritin and iron studies", "Peripheral blood smear"],
+      "specialties": ["General Medicine", "Haematology", "Gynaecology", "Diagnostics"],
+      "sources": [{ "label": "NHS - Iron deficiency anaemia", "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/" }]
+    },
+    {
+      "id": "migraine",
+      "name": "Migraine",
+      "category": "Neurological",
+      "care_level": "selfcare",
+      "overview": "A recurring neurological headache that is often one-sided and throbbing, with nausea and sensitivity to light and sound. Attacks can be disabling, but a symptom pattern alone never excludes a serious cause - sudden or unusual headaches need urgent review.",
+      "symptoms": { "one_sided_headache": 3, "throbbing_headache": 3, "nausea": 3, "vomiting": 2, "sensitivity_to_light": 3, "sensitivity_to_sound": 3, "visual_aura": 2, "headache": 2, "dizziness": 1, "blurred_vision": 1 },
+      "precautions": [
+        "Keep a headache diary of triggers (missed meals, poor sleep, stress, screens, certain foods) and share it with your doctor.",
+        "Treat early: resting in a dark, quiet room at the first sign shortens attacks.",
+        "Avoid painkiller overuse (more than 2-3 days a week), which itself causes medication-overuse headache.",
+        "Get medical review if attacks become more frequent, or if you need painkillers regularly.",
+        "Never ignore a thunderclap headache, headache with fever and a stiff neck, or headache after a head injury."
+      ],
+      "red_flags": ["Sudden, extremely severe headache (thunderclap)", "Weakness on one side, slurred speech or vision loss", "Headache with fever and a stiff neck", "Headache after a head injury", "Aura lasting more than 60 minutes or a first-ever attack over 50 years"],
+      "self_care": [
+        "Rest in a dark, quiet room; apply a cold pack to the forehead",
+        "Sleep and eat at regular times; stay hydrated",
+        "Limit screen glare and take regular breaks",
+        "Paracetamol or a simple painkiller at the first sign, if suitable for you - ask a doctor about migraine-specific medicines"
+      ],
+      "tests": ["Usually a clinical diagnosis - no routine scan needed", "Neurology review and imaging only if red flags are present"],
+      "specialties": ["Neurology", "General Medicine"],
+      "sources": [{ "label": "NHS - Migraine", "url": "https://www.nhs.uk/conditions/migraine/" }]
+    },
+    {
+      "id": "allergic_rhinitis",
+      "name": "Allergic Rhinitis (Hay Fever)",
+      "aka": "Allergy, dust allergy",
+      "category": "Allergy",
+      "care_level": "selfcare",
+      "overview": "An allergic reaction in the nose and eyes to dust, pollen, moulds or pet dander. It causes sneezing, an itchy runny nose and itchy watery eyes, and is not contagious.",
+      "symptoms": { "sneezing": 3, "itchy_eyes": 3, "runny_nose": 3, "watery_eyes": 3, "blocked_nose": 2, "itching": 2, "cough": 1, "loss_of_smell_taste": 1, "breathlessness": 1, "wheezing": 1 },
+      "precautions": [
+        "Identify and reduce exposure to triggers - dust the home often, use allergen-proof covers, avoid smoke and strong perfumes.",
+        "Wear a mask while cleaning or when dust and pollen are high.",
+        "Ask a pharmacist or doctor before using nasal decongestant sprays - more than 5 days causes rebound blockage.",
+        "Antihistamines can help, but check suitability if you are pregnant or have a long-term illness.",
+        "Get medical review if symptoms disturb sleep, affect work or study, or if you also wheeze."
+      ],
+      "red_flags": ["Swelling of the tongue, lips or throat", "Difficulty breathing or wheezing", "Collapse or widespread hives after a food, drug or insect sting"],
+      "self_care": [
+        "Saline nasal rinse to clear allergens",
+        "Keep windows closed during high pollen and change clothes after being outdoors",
+        "Wash bedding in hot water weekly; keep pets out of the bedroom",
+        "Avoid hanging clothes outside to dry during high pollen days"
+      ],
+      "tests": ["Usually clinical", "Skin prick test or serum IgE allergy panel if needed", "ENT review if persistent"],
+      "specialties": ["ENT", "Allergy & Immunology", "Pulmonology", "General Medicine"],
+      "sources": [{ "label": "NHS - Allergic rhinitis", "url": "https://www.nhs.uk/conditions/allergic-rhinitis/" }]
+    },
+    {
+      "id": "conjunctivitis",
+      "name": "Conjunctivitis",
+      "aka": "Pink eye, Madras eye",
+      "category": "Eye",
+      "care_level": "selfcare",
+      "overview": "Inflammation of the thin covering of the eye. It causes red, gritty, watery or sticky eyes. Viral conjunctivitis is very contagious and spreads in schools and offices; allergic conjunctivitis is not contagious.",
+      "symptoms": { "red_eye": 3, "eye_discharge": 3, "itchy_eyes": 2, "watery_eyes": 2, "sensitivity_to_light": 2, "blurred_vision": 1 },
+      "precautions": [
+        "Wash hands often and use your own towel, pillow and eye drops - do not share.",
+        "Stop wearing contact lenses until the eye is fully better and replace lenses and solution.",
+        "Do not use leftover steroid or antibiotic eye drops from a previous episode.",
+        "Use clean cotton wool soaked in cooled boiled water to gently wipe away crusts.",
+        "See an eye doctor for eye pain, light sensitivity, reduced vision, or if a newborn has red or sticky eyes."
+      ],
+      "red_flags": ["Severe eye pain or marked light sensitivity", "Any change in vision", "Very red eye with a cloudy cornea", "Newborn with red, swollen or discharging eyes"],
+      "self_care": [
+        "Cool compress on closed eyes several times a day",
+        "Lubricating (artificial tear) drops for gritty eyes",
+        "Rest eyes from screens and avoid rubbing them",
+        "Stay home from school or work while discharge is heavy"
+      ],
+      "tests": ["Clinical eye examination", "Swab and culture for severe or recurrent cases"],
+      "specialties": ["Ophthalmology", "General Medicine"],
+      "sources": [{ "label": "NHS - Conjunctivitis", "url": "https://www.nhs.uk/conditions/conjunctivitis/" }]
+    },
+    {
+      "id": "type2_diabetes",
+      "name": "Type 2 Diabetes",
+      "aka": "High blood sugar",
+      "category": "Metabolic",
+      "care_level": "routine",
+      "overview": "A long-term condition where the body cannot use insulin properly, so blood sugar stays high. It often causes no symptoms for years, which is why testing matters. It is confirmed only by blood tests - never by symptoms alone.",
+      "symptoms": { "excessive_thirst": 3, "frequent_urination": 3, "fatigue": 2, "weight_loss": 2, "blurred_vision": 2, "slow_healing_wounds": 3, "numbness_feet": 3, "itching": 1, "dizziness": 1 },
+      "precautions": [
+        "Get tested if you have symptoms, a family history, or a waist above the healthy range - early diagnosis prevents complications.",
+        "Do not stop or change diabetes medicines without a doctor, and never rely on home remedies alone.",
+        "Eat regular meals with less refined sugar and fried food; include vegetables, whole grains and protein.",
+        "Exercise at least 30 minutes most days, and check your feet daily for cuts or sores.",
+        "Get blood pressure, cholesterol, eye and kidney checks at least once a year."
+      ],
+      "red_flags": ["Vomiting with deep, rapid breathing or a fruity breath smell", "Confusion or drowsiness", "Unable to keep fluids down", "Very high or very low sugar readings with symptoms"],
+      "self_care": [
+        "Balanced plate: half vegetables, a quarter whole grains, a quarter protein",
+        "Walk briskly 30 minutes most days",
+        "Avoid sugary drinks, sweets and deep-fried snacks",
+        "Never skip prescribed medicines and monitor sugar as advised"
+      ],
+      "tests": ["Fasting and post-prandial blood glucose", "HbA1c", "Lipid profile", "Urine microalbumin and creatinine", "Retinal (eye) screening"],
+      "specialties": ["Endocrinology", "General Medicine", "Diabetology", "Diagnostics", "Ophthalmology"],
+      "sources": [
+        { "label": "NHS - Type 2 diabetes symptoms", "url": "https://www.nhs.uk/conditions/type-2-diabetes/symptoms/" },
+        { "label": "CDC - Diabetes symptoms", "url": "https://www.cdc.gov/diabetes/signs-symptoms/index.html" }
+      ]
+    }
+  ]
+}

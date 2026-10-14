@@ -1,0 +1,71 @@
+{
+  "note": "Intent rules for the Susrutha Assistant chatbot. This is a transparent, rule-based assistant (keyword + intent scoring) - not a large language model. It answers health-literacy, navigation and first-aid questions from the curated knowledge base and always redirects medical decisions to a qualified clinician.",
+  "identity": "Susrutha Assistant",
+  "greeting": "Namaste! I am the Susrutha Assistant. I can explain common health conditions, share prevention and home-care steps from WHO/CDC/NHS guidance, help you find a hospital or testing facility in Hyderabad, and point you to the symptom checker. I cannot diagnose you - only a doctor can do that.",
+  "fallback": "I could not find a confident answer to that from my curated health knowledge base. Try asking about a condition (\"what is dengue?\"), a symptom (\"fever with body pain\"), prevention (\"how to prevent malaria\"), first aid (\"ORS recipe\"), services (\"nearest fever hospital\") or tests (\"what tests for typhoid\"). For anything about your own health, please consult a doctor - you can also use the Symptom Checker tab.",
+  "disclaimer": "Reminder: this is general health information from public sources (WHO, CDC, NHS), not a medical diagnosis. Please consult a qualified doctor for your own symptoms.",
+  "intents": [
+    {
+      "id": "emergency",
+      "title": "Emergency",
+      "keywords": ["chest pain", "heart attack", "cannot breathe", "can't breathe", "difficulty breathing", "unconscious", "fainted", "bleeding heavily", "severe bleeding", "stroke", "paralysis", "slurred speech", "fits", "seizure", "not breathing", "collapsed", "emergency", "ambulance", "108"],
+      "priority": 100,
+      "response": "🚨 This may be a MEDICAL EMERGENCY. Please act now:\n\n1. Call 108 (ambulance) or 112 (national emergency) immediately.\n2. If the person is unconscious, lay them on their side and check that they are breathing.\n3. For chest pain, make them sit and rest; do not give food or water.\n4. Go to the nearest emergency department - see the **Find Care** tab for locations.\n\nDo not wait for this app. Every minute matters in an emergency.",
+      "actions": [{ "type": "tab", "target": "care", "label": "Open Find Care" }],
+      "urgent": true
+    },
+    {
+      "id": "greeting",
+      "title": "Greeting",
+      "keywords": ["hi", "hello", "hey", "namaste", "good morning", "good evening", "who are you", "what can you do", "help me"],
+      "priority": 5,
+      "response": "Namaste! I am the Susrutha Assistant 🤝\n\nI can help you with:\n• **Symptoms** - describe them and I will run the symptom checker with you\n• **Conditions** - \"what is dengue?\", \"tell me about typhoid\"\n• **Prevention** - \"how to prevent malaria\"\n• **First aid / home care** - \"ORS recipe\", \"how to treat a common cold\"\n• **Services in Hyderabad** - \"nearest fever hospital\", \"where to test for typhoid\"\n• **Guidance** - when to see a doctor and the red flags to watch for\n\nI give general information from WHO, CDC and NHS sources. I cannot diagnose you - a doctor must do that."
+    },
+    {
+      "id": "identity_limit",
+      "title": "Are you a doctor / can you diagnose",
+      "keywords": ["are you a doctor", "can you diagnose", "is this a diagnosis", "do you diagnose", "is this accurate", "should i trust", "are you ai", "are you a real doctor", "will you prescribe", "medicine prescription"],
+      "priority": 90,
+      "response": "No - I am not a doctor and I cannot diagnose or prescribe. 🙏\n\nWhat I do is:\n• Match the symptoms you select against published symptom descriptions from WHO, CDC, NHS and MedlinePlus.\n• Tell you how urgent your pattern looks and what the red flags are.\n• Point you to the right kind of facility in Hyderabad.\n\nThink of me as a well-informed health-literacy helper. A qualified clinician must confirm any condition, and only a clinician can prescribe medicines. If your symptoms are severe or getting worse, please seek medical care.",
+      "actions": [{ "type": "tab", "target": "checker", "label": "Open Symptom Checker" }]
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy",
+      "keywords": ["privacy", "data", "is my data safe", "do you store", "who sees my data", "anonymous", "gdpr", "personal information"],
+      "priority": 80,
+      "response": "Good question - privacy is a design choice here. 🔒\n\n• No account, no login and no name or phone number is collected.\n• Your age/pregnancy/chronic-condition inputs are optional and are used only to adjust the urgency level.\n• Nothing you enter is written to a database or sent to a third party - the assessment runs with the local knowledge base and the results stay in your browser tab.\n• Health data is not included in analytics or logs.\n\nYou can close the tab and the information is gone."
+    },
+    {
+      "id": "ors",
+      "title": "ORS recipe / dehydration",
+      "keywords": ["ors", "oral rehydration", "dehydration", "electrolyte", "how to make ors", "loose motion remedy", "salt sugar solution"],
+      "priority": 70,
+      "response": "**Home ORS recipe (WHO/UNICEF)**\n\n• 1 litre of clean or boiled-and-cooled water\n• 6 level teaspoons of sugar\n• 1/2 level teaspoon of salt\n\nStir until dissolved and sip slowly, a little every few minutes - especially after each loose stool. Use within 24 hours and never add more salt than stated.\n\nReady-made ORS sachets from any pharmacy are the safest option.\n\n⚠️ **Go to a hospital urgently if:** there is no urine for 6-8 hours, the person cannot drink or keep fluids down, there is blood in the stool, or there is marked drowsiness - especially in babies, older adults and pregnant women.",
+      "actions": [{ "type": "tab", "target": "checker", "label": "Check these symptoms" }]
+    },
+    {
+      "id": "find_facility",
+      "title": "Find hospital / testing centre",
+      "keywords": ["hospital", "nearest hospital", "clinic", "doctor near me", "where can i test", "testing centre", "diagnostic", "lab", "blood test", "emergency room", "government hospital", "facility"],
+      "priority": 60,
+      "response": "I can show you hospitals and diagnostic labs in Hyderabad with a map, distance from your area, and what each one offers. 🏥\n\nOpen the **Find Care** tab, choose the condition (for example Dengue) or a specialty (for example Fever / Tropical Diseases), pick your area, and sort by distance. Each card has a Google Maps directions link.\n\nFor a fever, the **Fever Hospital (Nallakunta)** is the dedicated government centre; **NIMS**, **Gandhi** and **Osmania General** are large government options; **Apollo, KIMS, AIG, Continental, Yashoda and CARE** are private ones. Diagnostic labs such as **Vijaya Diagnostic Centre** can run blood tests quickly if a doctor has advised them.",
+      "actions": [{ "type": "tab", "target": "care", "label": "Open Find Care" }]
+    },
+    {
+      "id": "symptom_check",
+      "title": "Symptom guidance",
+      "keywords": ["i have", "i am having", "suffering from", "my symptoms", "symptom checker", "what do i have", "feeling sick", "not well", "fever and", "pain in"],
+      "priority": 55,
+      "response": "Tell me what you are feeling and we will work through it together - or use the **Symptom Checker** tab, which is quicker and more accurate because it also asks your age and how long you have had the symptoms.\n\n⚠️ If you have chest pain, difficulty breathing, confusion, a seizure, heavy bleeding or one-sided weakness, call **108** or go to the nearest emergency department right away.",
+      "actions": [{ "type": "tab", "target": "checker", "label": "Open Symptom Checker" }]
+    },
+    {
+      "id": "when_to_see_doctor",
+      "title": "When to see a doctor",
+      "keywords": ["when to see a doctor", "when should i go to hospital", "is it serious", "should i worry", "red flags", "danger signs", "when is it an emergency"],
+      "priority": 50,
+      "response": "**Go to an emergency department now (call 108) if you have:**\n• Difficulty breathing or chest pain or pressure\n• Confusion, drowsiness, a seizure or fainting\n• Bleeding that will not stop, blood in vomit or stool\n• Weakness on one side of the body or slurred speech\n• In a child: inability to drink, very little urine, unusual sleepiness\n\n**See a doctor the same day if you have:**\n• Fever for more than 2-3 days, or a very high fever\n• Fever with severe headache, joint pain or a rash (test for dengue/malaria)\n• Persistent vomiting or diarrhoea, especially with little urine\n• Burning urination with fever or back pain\n\n**A routine appointment is fine for:**\n• A mild cold, an itchy nose, tiredness, or a long-standing headache pattern.\n\nWhen in doubt, it is always reasonable to see a doctor - that is what they are for."
+    }
+  ]
+}

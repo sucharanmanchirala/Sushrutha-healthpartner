@@ -1,0 +1,137 @@
+{
+  "note": "Symptom vocabulary used by the Susrutha Health Partner triage engine. Plain-language labels derived from WHO / CDC / NHS / MedlinePlus symptom descriptions. This is a decision-support vocabulary, not a diagnostic ontology.",
+  "groups": [
+    {
+      "id": "general",
+      "name": "General & whole body",
+      "icon": "🌡️",
+      "symptoms": [
+        { "id": "fever", "label": "Mild fever (up to 100.4°F)", "keywords": ["fever", "temperature", "low grade"] },
+        { "id": "high_fever", "label": "High fever (above 102°F / 39°C)", "keywords": ["high fever", "very hot", "103", "104"] },
+        { "id": "chills", "label": "Chills or shivering", "keywords": ["chills", "shivering", "rigors"] },
+        { "id": "fatigue", "label": "Tiredness / weakness", "keywords": ["tired", "weak", "fatigue", "exhausted"] },
+        { "id": "body_ache", "label": "Body aches", "keywords": ["body ache", "muscle pain", "myalgia"] },
+        { "id": "joint_pain", "label": "Joint pain or swelling", "keywords": ["joint", "knee pain", "arthritis"] },
+        { "id": "night_sweats", "label": "Night sweats", "keywords": ["sweating", "night sweat"] },
+        { "id": "weight_loss", "label": "Unexplained weight loss", "keywords": ["losing weight", "weight loss"] },
+        { "id": "loss_of_appetite", "label": "Loss of appetite", "keywords": ["not hungry", "appetite"] },
+        { "id": "malaise", "label": "Feeling generally unwell", "keywords": ["unwell", "uncomfortable", "malaise"] }
+      ]
+    },
+    {
+      "id": "head",
+      "name": "Head, nerves & senses",
+      "icon": "🧠",
+      "symptoms": [
+        { "id": "headache", "label": "Headache", "keywords": ["headache", "head pain"] },
+        { "id": "severe_headache", "label": "Severe headache", "keywords": ["severe headache", "worst headache"] },
+        { "id": "throbbing_headache", "label": "Throbbing / pulsating headache", "keywords": ["throbbing", "pulsating"] },
+        { "id": "one_sided_headache", "label": "Headache on one side", "keywords": ["one side", "left side", "right side"] },
+        { "id": "pain_behind_eyes", "label": "Pain behind the eyes", "keywords": ["behind eyes", "eye pain", "retro orbital"] },
+        { "id": "dizziness", "label": "Dizziness / light-headedness", "keywords": ["dizzy", "giddiness", "light headed"] },
+        { "id": "sensitivity_to_light", "label": "Sensitivity to light", "keywords": ["light hurts", "photophobia"] },
+        { "id": "sensitivity_to_sound", "label": "Sensitivity to sound", "keywords": ["sound hurts", "phonophobia"] },
+        { "id": "visual_aura", "label": "Visual disturbance / aura (flashing lights, zigzags)", "keywords": ["aura", "flashing", "zigzag", "blurred aura"] },
+        { "id": "loss_of_smell_taste", "label": "Loss of smell or taste", "keywords": ["smell", "taste", "anosmia"] },
+        { "id": "confusion", "label": "Confusion or disorientation", "emergency": true, "keywords": ["confused", "disoriented", "not making sense", "drowsy"] },
+        { "id": "seizure", "label": "Fits / seizure (convulsions)", "emergency": true, "keywords": ["fits", "seizure", "convulsion"] },
+        { "id": "fainting", "label": "Fainting / loss of consciousness", "emergency": true, "keywords": ["fainted", "unconscious", "passed out"] },
+        { "id": "neck_stiffness", "label": "Stiff neck (cannot bend chin to chest)", "emergency": true, "keywords": ["stiff neck", "neck rigidity"] },
+        { "id": "one_sided_weakness", "label": "Weakness on one side of the body / slurred speech", "emergency": true, "keywords": ["weakness one side", "slurred speech", "paralysis", "stroke"] },
+        { "id": "sudden_vision_loss", "label": "Sudden loss of vision", "emergency": true, "keywords": ["lost vision", "blind", "cannot see"] }
+      ]
+    },
+    {
+      "id": "ent",
+      "name": "Nose, throat & ears",
+      "icon": "👃",
+      "symptoms": [
+        { "id": "runny_nose", "label": "Runny nose", "keywords": ["runny nose", "nasal discharge", "cold"] },
+        { "id": "blocked_nose", "label": "Blocked / stuffy nose", "keywords": ["blocked nose", "stuffy", "congestion"] },
+        { "id": "sneezing", "label": "Sneezing", "keywords": ["sneeze", "sneezing"] },
+        { "id": "sore_throat", "label": "Sore throat", "keywords": ["throat pain", "sore throat"] },
+        { "id": "ear_pain", "label": "Ear pain or blocked ear", "keywords": ["ear pain", "ear blocked"] }
+      ]
+    },
+    {
+      "id": "eye",
+      "name": "Eyes",
+      "icon": "👁️",
+      "symptoms": [
+        { "id": "red_eye", "label": "Red / pink eye", "keywords": ["red eye", "pink eye", "bloodshot"] },
+        { "id": "itchy_eyes", "label": "Itchy eyes", "keywords": ["itchy eyes", "eye itching"] },
+        { "id": "watery_eyes", "label": "Watery eyes", "keywords": ["watering eyes", "tearing"] },
+        { "id": "eye_discharge", "label": "Sticky eye discharge / crusted lashes", "keywords": ["discharge", "crust", "sticky eye"] }
+      ]
+    },
+    {
+      "id": "chest",
+      "name": "Chest & breathing",
+      "icon": "🫁",
+      "symptoms": [
+        { "id": "cough", "label": "Cough with phlegm", "keywords": ["cough with phlegm", "wet cough", "sputum"] },
+        { "id": "dry_cough", "label": "Dry cough", "keywords": ["dry cough", "tickly cough"] },
+        { "id": "breathlessness", "label": "Difficulty breathing / shortness of breath", "emergency": true, "keywords": ["breathless", "shortness of breath", "cannot breathe", "gasping"] },
+        { "id": "wheezing", "label": "Wheezing sound while breathing", "keywords": ["wheeze", "whistling breath"] },
+        { "id": "chest_pain", "label": "Chest pain or pressure", "emergency": true, "keywords": ["chest pain", "chest pressure", "chest tightness"] },
+        { "id": "blue_lips", "label": "Bluish lips, face or fingertips", "emergency": true, "keywords": ["blue lips", "bluish", "cyanosis"] }
+      ]
+    },
+    {
+      "id": "gut",
+      "name": "Stomach & digestion",
+      "icon": "🍽️",
+      "symptoms": [
+        { "id": "nausea", "label": "Nausea (feeling of vomiting)", "keywords": ["nausea", "queasy", "vomiting sensation"] },
+        { "id": "vomiting", "label": "Vomiting", "keywords": ["vomiting", "throwing up", "puking"] },
+        { "id": "diarrhea", "label": "Loose motions / diarrhoea (3+ times a day)", "keywords": ["loose motion", "diarrhoea", "diarrhea", "stomach upset"] },
+        { "id": "abdominal_pain", "label": "Abdominal pain / cramps", "keywords": ["stomach pain", "abdominal", "cramps"] },
+        { "id": "constipation", "label": "Constipation", "keywords": ["constipation", "hard stool"] },
+        { "id": "dehydration", "label": "Signs of dehydration (dry mouth, sunken eyes, very thirsty)", "keywords": ["dehydrated", "dry mouth", "sunken eyes"] },
+        { "id": "blood_in_stool", "label": "Blood in stool", "emergency": true, "keywords": ["blood in stool", "bloody stool", "black stool"] },
+        { "id": "blood_in_vomit", "label": "Blood in vomit", "emergency": true, "keywords": ["blood in vomit", "vomiting blood"] },
+        { "id": "severe_abdominal_pain", "label": "Severe abdominal pain", "emergency": true, "keywords": ["severe stomach pain", "unbearable stomach pain"] },
+        { "id": "jaundice", "label": "Yellow eyes or skin (jaundice)", "keywords": ["yellow eyes", "yellow skin", "jaundice"] },
+        { "id": "unable_to_drink", "label": "Unable to keep fluids down", "emergency": true, "keywords": ["cannot drink", "vomiting everything", "cannot keep down"] }
+      ]
+    },
+    {
+      "id": "urinary",
+      "name": "Urine & kidneys",
+      "icon": "💧",
+      "symptoms": [
+        { "id": "burning_urination", "label": "Burning or pain while passing urine", "keywords": ["burning urine", "painful urination", "dysuria"] },
+        { "id": "frequent_urination", "label": "Passing urine very often", "keywords": ["frequent urination", "urinating often", "polyuria"] },
+        { "id": "cloudy_urine", "label": "Cloudy or bad-smelling urine", "keywords": ["cloudy urine", "smelly urine"] },
+        { "id": "blood_in_urine", "label": "Blood in urine", "keywords": ["blood in urine", "haematuria", "red urine"] },
+        { "id": "flank_pain", "label": "Pain in the side / lower back", "keywords": ["flank pain", "side pain", "lower back"] },
+        { "id": "no_urine", "label": "Passing little or no urine", "emergency": true, "keywords": ["no urine", "not passing urine", "urine reduced"] }
+      ]
+    },
+    {
+      "id": "skin",
+      "name": "Skin & bleeding",
+      "icon": "🩹",
+      "symptoms": [
+        { "id": "rash", "label": "Skin rash or red spots", "keywords": ["rash", "red spots", "hives"] },
+        { "id": "itching", "label": "Itchy skin", "keywords": ["itching", "itchy skin", "pruritus"] },
+        { "id": "pale_skin", "label": "Pale skin, lips or eyelids", "keywords": ["pale", "paleness"] },
+        { "id": "slow_healing_wounds", "label": "Slow-healing wounds or repeated infections", "keywords": ["wound not healing", "slow healing"] },
+        { "id": "easy_bruising", "label": "Easy bruising or bleeding", "keywords": ["bruising", "bleeding easily"] },
+        { "id": "bleeding_gums", "label": "Bleeding gums or nosebleeds", "emergency": true, "keywords": ["bleeding gums", "nose bleed"] },
+        { "id": "cold_clammy_skin", "label": "Cold, clammy or sweaty hands and feet", "emergency": true, "keywords": ["cold hands", "clammy", "sweaty palms"] }
+      ]
+    },
+    {
+      "id": "metabolic",
+      "name": "Heart, energy & metabolism",
+      "icon": "❤️",
+      "symptoms": [
+        { "id": "palpitations", "label": "Heart racing / palpitations", "keywords": ["palpitations", "heart racing", "fast heartbeat"] },
+        { "id": "excessive_thirst", "label": "Constant thirst", "keywords": ["thirsty", "thirst", "polydipsia"] },
+        { "id": "blurred_vision", "label": "Blurred vision", "keywords": ["blurred vision", "vision blurry"] },
+        { "id": "numbness_feet", "label": "Numbness or tingling in hands / feet", "keywords": ["numbness", "tingling", "pins and needles"] }
+      ]
+    }
+  ]
+}

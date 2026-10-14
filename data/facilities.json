@@ -1,0 +1,242 @@
+{
+  "note": "Healthcare facilities in and around Hyderabad, Telangana, used by the Care Finder feature. Names, areas and addresses are real; coordinates are APPROXIMATE map pins (not surveyed entrances) - always confirm the exact entrance, timings and test availability by calling the hospital. Service tags are indicative, not a guarantee of availability.",
+  "emergency_numbers": [
+    { "label": "Ambulance / Emergency (Telangana)", "number": "108" },
+    { "label": "National Emergency Number", "number": "112" },
+    { "label": "Health Helpline (India)", "number": "104" },
+    { "label": "COVID-19 / Health advice helpline", "number": "1075" }
+  ],
+  "facilities": [
+    {
+      "id": "nims",
+      "name": "Nizam's Institute of Medical Sciences (NIMS)",
+      "type": "Government",
+      "area": "Punjagutta",
+      "address": "Punjagutta Road, near GVK Mall, Hyderabad 500082",
+      "lat": 17.4226, "lng": 78.4534,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Fever / Tropical Diseases", "Cardiology", "Neurology", "Endocrinology", "Nephrology", "Urology", "Ophthalmology", "ENT", "Paediatrics", "Gynaecology", "Haematology", "Gastroenterology", "Pulmonology", "Orthopaedics", "Oncology"],
+      "services": ["24x7 emergency", "OPD", "Inpatient and ICU", "Full diagnostic laboratory", "Government rates"],
+      "note": "Large government tertiary referral centre - very busy OPD; arrive early for tokens."
+    },
+    {
+      "id": "ogh",
+      "name": "Osmania General Hospital (OGH)",
+      "type": "Government",
+      "area": "Afzalgunj",
+      "address": "15-5-104, near Afzalgunj Bus Stop, Hyderabad 500012",
+      "lat": 17.3729, "lng": 78.4735,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Fever / Tropical Diseases", "Cardiology", "Paediatrics", "Gynaecology", "Ophthalmology", "ENT", "Neurology", "Orthopaedics"],
+      "services": ["24x7 emergency", "OPD", "Inpatient care", "Diagnostic laboratory", "Government rates"],
+      "note": "One of the oldest government hospitals in Hyderabad, close to the old city."
+    },
+    {
+      "id": "gandhi",
+      "name": "Gandhi Hospital",
+      "type": "Government",
+      "area": "Musheerabad / Secunderabad",
+      "address": "Gandhi Buildings, Bhoiguda Road, Secunderabad 500025",
+      "lat": 17.4231, "lng": 78.5036,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Fever / Tropical Diseases", "Cardiology", "Neurology", "Nephrology", "Paediatrics", "Orthopaedics", "Pulmonology"],
+      "services": ["24x7 emergency", "OPD", "Inpatient and ICU", "Diagnostic laboratory", "Government rates"],
+      "note": "Major government teaching hospital serving north Hyderabad and Secunderabad."
+    },
+    {
+      "id": "fever_hospital",
+      "name": "Sir Ronald Ross Institute of Tropical and Communicable Diseases (Fever Hospital)",
+      "type": "Government",
+      "area": "Nallakunta",
+      "address": "Government Fever Hospital, Nallakunta Main Road, Hyderabad 500044",
+      "lat": 17.3964, "lng": 78.5010,
+      "specialties": ["Fever / Tropical Diseases", "General Medicine", "Emergency", "Diagnostics", "Paediatrics"],
+      "services": ["Fever clinic", "Dengue / malaria / typhoid testing", "Inpatient isolation wards", "Government rates"],
+      "note": "The dedicated government hospital for fevers and communicable diseases - the natural first stop for a high fever in Hyderabad. Call ahead to confirm which tests are running that day."
+    },
+    {
+      "id": "apollo_jubilee_hills",
+      "name": "Apollo Hospitals, Jubilee Hills (Apollo Health City)",
+      "type": "Private",
+      "area": "Jubilee Hills / Film Nagar",
+      "address": "Road No. 72, Jubilee Hills, Hyderabad 500033",
+      "lat": 17.4150, "lng": 78.4137,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Cardiology", "Endocrinology", "Diabetology", "Gastroenterology", "Nephrology", "Urology", "Neurology", "Paediatrics", "Orthopaedics", "Oncology"],
+      "services": ["24x7 emergency", "OPD by appointment", "Health checks", "Advanced imaging and laboratory", "Cashless insurance"],
+      "note": "Large private multispecialty campus; appointments advised for OPD."
+    },
+    {
+      "id": "kims_secunderabad",
+      "name": "KIMS Hospitals, Secunderabad",
+      "type": "Private",
+      "area": "Begumpet / Minister Road",
+      "address": "1-8-31/1, Minister Road, Krishna Nagar Colony, Secunderabad 500003",
+      "lat": 17.4372, "lng": 78.4825,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Cardiology", "Nephrology", "Urology", "Gastroenterology", "Endocrinology", "Diabetology", "Paediatrics", "Neurology", "Orthopaedics"],
+      "services": ["24x7 emergency", "OPD", "Cardiac and renal care", "Diagnostic laboratory", "Cashless insurance"],
+      "note": "Large private multispecialty hospital in central Hyderabad."
+    },
+    {
+      "id": "aig_gachibowli",
+      "name": "AIG Hospitals (Asian Institute of Gastroenterology)",
+      "type": "Private",
+      "area": "Gachibowli",
+      "address": "Plot 2/3/4/5, Survey No. 136/1, Mindspace Road, Gachibowli, Hyderabad 500032",
+      "lat": 17.4432, "lng": 78.3662,
+      "specialties": ["Gastroenterology", "General Medicine", "Emergency", "Diagnostics", "Urology", "Nephrology", "Diabetology", "Oncology"],
+      "services": ["24x7 emergency", "Gastro and liver OPD", "Endoscopy", "Advanced imaging", "Cashless insurance"],
+      "note": "Best known for digestive and liver diseases; also a full multispecialty hospital."
+    },
+    {
+      "id": "continental_gachibowli",
+      "name": "Continental Hospitals",
+      "type": "Private",
+      "area": "Nanakramguda / Financial District",
+      "address": "Plot 3, Road No. 2, IT and Financial District, Gachibowli, Hyderabad 500032",
+      "lat": 17.4177, "lng": 78.3391,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Cardiology", "Diabetology", "Endocrinology", "Nephrology", "Neurology", "Gastroenterology", "Orthopaedics"],
+      "services": ["24x7 emergency", "OPD", "Health checks", "Diagnostic laboratory", "Cashless insurance"],
+      "note": "Convenient for the IT corridor (Gachibowli, Kondapur, Madhapur)."
+    },
+    {
+      "id": "yashoda_somajiguda",
+      "name": "Yashoda Hospitals, Somajiguda",
+      "type": "Private",
+      "area": "Somajiguda",
+      "address": "6-3-905, Raj Bhavan Road, Matha Nagar, Somajiguda, Hyderabad 500082",
+      "lat": 17.4245, "lng": 78.4570,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Endocrinology", "Diabetology", "Cardiology", "Nephrology", "Gastroenterology", "Orthopaedics", "Pulmonology"],
+      "services": ["24x7 emergency", "OPD", "Diabetes clinic", "Diagnostic laboratory", "Cashless insurance"],
+      "note": "Central location close to Punjagutta, Somajiguda and Banjara Hills."
+    },
+    {
+      "id": "care_banjara_hills",
+      "name": "CARE Hospitals, Banjara Hills",
+      "type": "Private",
+      "area": "Banjara Hills",
+      "address": "Road No. 1, Banjara Hills, Hyderabad 500034",
+      "lat": 17.4150, "lng": 78.4480,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Cardiology", "Diabetology", "Nephrology", "Urology", "Neurology", "Gastroenterology"],
+      "services": ["24x7 emergency", "OPD", "Cardiac care", "Diagnostic laboratory", "Cashless insurance"],
+      "note": "Multispecialty private hospital in central Hyderabad."
+    },
+    {
+      "id": "rainbow_banjara_hills",
+      "name": "Rainbow Children's Hospital & BirthRight, Banjara Hills",
+      "type": "Private",
+      "area": "Banjara Hills",
+      "address": "Road No. 2, near Hotel Park Hyatt, Banjara Hills, Hyderabad 500034",
+      "lat": 17.4255, "lng": 78.4319,
+      "specialties": ["Paediatrics", "Emergency", "Diagnostics", "Neonatology", "Gynaecology"],
+      "services": ["Paediatric 24x7 emergency", "Paediatric OPD", "Vaccination clinic", "Neonatal ICU"],
+      "note": "CHILDREN ONLY - good for paediatric fever, but it is not a general adult hospital."
+    },
+    {
+      "id": "aiims_bibinagar",
+      "name": "AIIMS Bibinagar",
+      "type": "Government",
+      "area": "Bibinagar (Yadadri Bhuvanagiri district)",
+      "address": "Hyderabad-Warangal Highway (NH-163), Bibinagar, Telangana 508126",
+      "lat": 17.4710, "lng": 78.7780,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Cardiology", "Neurology", "Endocrinology", "Nephrology", "Paediatrics", "Oncology", "Orthopaedics"],
+      "services": ["24x7 emergency", "OPD", "Inpatient and ICU", "Diagnostic laboratory", "Government rates"],
+      "note": "About 45-55 km from central Hyderabad (NH-163 towards Warangal) - allow travel time in an emergency."
+    },
+    {
+      "id": "esic_sanathnagar",
+      "name": "ESIC Medical College & Hospital, Sanathnagar",
+      "type": "Government",
+      "area": "Sanathnagar / Sanjeeva Reddy Nagar",
+      "address": "7-1-634, Survey Nos. 121/1 and 121/2, NH-65, Hyderabad 500038",
+      "lat": 17.4540, "lng": 78.4430,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Orthopaedics", "Paediatrics", "Ophthalmology", "Pulmonology"],
+      "services": ["24x7 emergency", "OPD", "Diagnostic laboratory", "ESIC covered services"],
+      "note": "ESIC services may require employee/insurance eligibility - confirm at the help desk."
+    },
+    {
+      "id": "area_hospital_kondapur",
+      "name": "Government Area Hospital, Kondapur",
+      "type": "Government",
+      "area": "Kondapur",
+      "address": "Near Chirec International School, Kondapur, Hyderabad 500084",
+      "lat": 17.4631, "lng": 78.3530,
+      "specialties": ["General Medicine", "Emergency", "Diagnostics", "Paediatrics", "Fever / Tropical Diseases"],
+      "services": ["24x7 emergency", "OPD", "Basic diagnostic laboratory", "Government rates"],
+      "note": "Nearest government hospital for the IT corridor; useful for first assessment and basic tests."
+    },
+    {
+      "id": "niloufer",
+      "name": "Niloufer Hospital for Women and Children",
+      "type": "Government",
+      "area": "Red Hills / Lakdikapul",
+      "address": "Red Hills, near Lakdikapul, Hyderabad 500004",
+      "lat": 17.3987, "lng": 78.4560,
+      "specialties": ["Paediatrics", "Gynaecology", "Emergency", "Diagnostics", "Neonatology"],
+      "services": ["Paediatric emergency", "Paediatric and women's OPD", "Neonatal ICU", "Government rates"],
+      "note": "Government referral centre for children and women - not for adult general medicine."
+    },
+    {
+      "id": "mnj_oncology",
+      "name": "MNJ Institute of Oncology and Regional Cancer Centre",
+      "type": "Government",
+      "area": "Red Hills",
+      "address": "Red Hills, Hyderabad 500004",
+      "lat": 17.4000, "lng": 78.4560,
+      "specialties": ["Oncology", "Haematology", "Diagnostics", "General Medicine"],
+      "services": ["Cancer OPD", "Chemotherapy and radiotherapy", "Diagnostic laboratory", "Government rates"],
+      "note": "Regional cancer centre for Telangana; referral-based for suspected cancer."
+    },
+    {
+      "id": "sarojini_devi_eye",
+      "name": "Sarojini Devi Eye Hospital",
+      "type": "Government",
+      "area": "Mehdipatnam",
+      "address": "Mehdipatnam, Hyderabad 500028",
+      "lat": 17.3930, "lng": 78.4390,
+      "specialties": ["Ophthalmology", "Diagnostics", "General Medicine"],
+      "services": ["Eye OPD", "Eye emergency", "Cataract and retina services", "Government rates"],
+      "note": "Dedicated eye hospital - the right place for a painful red eye or any vision change."
+    },
+    {
+      "id": "star_banjara_hills",
+      "name": "Star Hospitals, Banjara Hills",
+      "type": "Private",
+      "area": "Banjara Hills",
+      "address": "Road No. 10, Banjara Hills, Hyderabad 500034",
+      "lat": 17.4170, "lng": 78.4330,
+      "specialties": ["Cardiology", "Emergency", "General Medicine", "Diagnostics", "Nephrology", "Neurology", "Orthopaedics", "Pulmonology"],
+      "services": ["24x7 emergency", "Cardiac care", "OPD", "Diagnostic laboratory", "Cashless insurance"],
+      "note": "Known for cardiac care; central Hyderabad location."
+    },
+    {
+      "id": "vijaya_diagnostics_ameerpet",
+      "name": "Vijaya Diagnostic Centre, Ameerpet",
+      "type": "Diagnostic Lab",
+      "area": "Ameerpet",
+      "address": "Ameerpet main road (near Metro station), Hyderabad 500016",
+      "lat": 17.4367, "lng": 78.4487,
+      "specialties": ["Diagnostics", "Fever / Tropical Diseases", "Diabetology", "Endocrinology"],
+      "services": ["Blood tests and pathology", "X-ray, ultrasound, CT, MRI", "Home sample collection", "Reports online"],
+      "note": "Walk-in blood tests for fever panels (CBC, NS1, Widal, malaria), HbA1c and more. Confirm fasting requirements before you go."
+    },
+    {
+      "id": "srl_diagnostics_himayatnagar",
+      "name": "SRL Diagnostics, Himayatnagar",
+      "type": "Diagnostic Lab",
+      "area": "Himayatnagar",
+      "address": "Himayatnagar, Hyderabad 500029",
+      "lat": 17.4010, "lng": 78.4830,
+      "specialties": ["Diagnostics", "Fever / Tropical Diseases", "Haematology", "Endocrinology"],
+      "services": ["Pathology laboratory", "Health check packages", "Home collection", "Reports online"],
+      "note": "Nationally accredited laboratory chain; useful for a same-day blood panel."
+    },
+    {
+      "id": "metropolis_banjara_hills",
+      "name": "Metropolis Healthcare, Banjara Hills",
+      "type": "Diagnostic Lab",
+      "area": "Banjara Hills",
+      "address": "Banjara Hills, Hyderabad 500034",
+      "lat": 17.4190, "lng": 78.4350,
+      "specialties": ["Diagnostics", "Fever / Tropical Diseases", "Diabetology", "Haematology"],
+      "services": ["Blood tests and profile packages", "Home sample collection", "Digital reports"],
+      "note": "Good option for routine and fever-related blood tests without a hospital visit."
+    }
+  ]
+}
